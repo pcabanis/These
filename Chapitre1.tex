@@ -424,7 +424,7 @@ Une expérience connue consiste à déposer une goutte d’encre sur un papier e
   \label{fig:grille_encre}
 \end{figure}
 
-Dans le cas du flux, comme les molécules d’eau ont une orientation unidirectionnelle, leur mouvement peut être modélisé par un vecteur. La diffusion isotrope a une forme circulaire, il n’y a donc pas d’orientation préférentielle de la diffusion. La norme d’un vecteur (le rayon du cercle) suffit à décrire la diffusion. La diffusion anisotrope est décrite par une ellipse, il faut donc deux longueurs, le grand axe (bleue) et petit axe (rouge) au minimum décrire la géométrie de l’ovale et un vecteur pour décrire l’orientation. 
+Dans le cas du flux, comme les molécules d’eau ont une orientation unidirectionnelle, leur mouvement peut être modélisé par un vecteur. La diffusion isotrope a une forme circulaire, il n’y a donc pas d’orientation préférentielle de la diffusion. La norme d’un vecteur (le rayon du cercle) suffit à décrire la diffusion. La diffusion anisotrope est décrite par une ellipse, il faut donc deux longueurs, le grand axe (bleue) et petit axe (rouge) au minimum décrire la géométrie de l’ovale et un vecteur pour décrire l’orientation. \\
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -438,7 +438,7 @@ En trois dimensions, une ellipsoïde (ellipse en trois dimensions) nécessite si
 
 \subsubsection{L’imagerie pondérée en diffusion pour obtenir la direction d’un milieu}
 
-Dans la partie sur l’encodage de l’espace de fourier, nous avons vu que les gradients de lecture et d’encodage de phase avaient chacun une direction privilégiée (dans le cas d’une acquisition cartésienne : axe z pour la coupe, y pour l’encodage de phase et x pour la lecture). Les gradients de diffusion ont aussi une orientation privilégiée. En acquérant une première image avec un gradient dans une direction puis une deuxième image avec une autre orientation, il est possible de savoir si la diffusion est contrainte dans une orientation spécifique (Figure \ref{fig:grad_4}).
+\textcolor{red}{TODO pas clair: on impose/définit la direction priviligié non ? Dans la partie sur l’encodage de l’espace de fourier, nous avons vu que les gradients de lecture et d’encodage de phase avaient chacun une direction privilégiée (dans le cas d’une acquisition cartésienne : axe z pour la coupe, y pour l’encodage de phase et x pour la lecture).  Les gradients de diffusion ont aussi une orientation privilégiée.} En acquérant une première image avec un gradient dans une direction puis une deuxième image avec une autre orientation, il est possible de savoir si la diffusion est contrainte dans une orientation spécifique (Figure \ref{fig:grad_4}). En utilisant six images pondérés en diffusion ayant chacune l’orientation des gradients de diffusion différente, il est possible d’obtenir pour chaque pixel/voxel une ellipsoïde décrivant l’anisotropie d’un milieu.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -446,9 +446,10 @@ Dans la partie sur l’encodage de l’espace de fourier, nous avons vu que les 
      \end{center}
     \caption{Relation entre l’orientation du gradient, le mouvement des molécules et la perte du signal (S). Quand un gradient avec une orientation horizontale est appliqué, le mouvement des molécules d’eau le long de l’axe horizontale entraine une perte de signal. }
   \label{fig:grad_4}
+  %\vspace{-10mm}
 \end{figure}
 
-En utilisant six images pondérés en diffusion ayant chacune l’orientation des gradients de diffusion différente, il est possible d’obtenir pour chaque pixel/voxel une ellipsoïde décrivant l’anisotropie d’un milieu.
+
 \begin{figure}[!htbp]
   \begin{center}
     \includegraphics[width=0.9\textwidth]{Chapitre1/mileu_on_diff.png}
@@ -494,27 +495,23 @@ ln(S_0)
 0
 \end{bmatrix} 
 \end{equation}
-${\bar{b}}_{ij}$ correspondant à l’orientation  du gradient de diffusion  à la valeur b.
-
-Diagonaliser DT permet d’obtenir les valeurs propres du DT $\lambda_1$,$\lambda_2$,$\lambda_3$ dans les axes du repère de diagonalisation (les vecteurs propres) $e_1$,$e_2$,$e_3$ avec comme direction principale de l’ellipsoïde donnée par $e_1$ et $\lambda_1$. 
+${\bar{b}}_{ij}$ correspondant à l’orientation  du gradient de diffusion  à la valeur b. Diagonaliser DT permet d’obtenir les valeurs propres du DT $\lambda_1$, $\lambda_2$, $\lambda_3$ dans les axes du repère de diagonalisation (les vecteurs propres) $e_1$, $e_2$, $e_3$ avec comme direction principale de l’ellipsoïde donnée par $e_1$ et $\lambda_1$. 
 
 \subsubsection{Métriques dérivées du tenseur de diffusion}
 
-Les vecteurs et valeurs propres offrent une information importante sur l’anisotropie du tissu, mais ils ne peuvent être utiliser indépendamment les uns des autres. L’une des méthodes les plus simples est de faire la moyenne géométrique des images $S_{xx}$,$S_{yy}$,$S_{zz}$ : 
+Les vecteurs et valeurs propres offrent une information importante sur l’anisotropie du tissu, mais ils ne peuvent être utiliser indépendamment les uns des autres. L’une des méthodes les plus simples est de faire la moyenne géométrique des images $S_{xx}$, $S_{yy}$, $S_{zz}$ : 
 \begin{equation}
 \nonumber
 S_{total}=\ \sqrt{\prod_{i=j=1}^{3}S_{i,j}}=S_0\cdot e^{-\frac{1}{3}\sum_{i=j=1}^{3}{D_{i,j}\ \cdot b}}\ =\ S_0\cdot e^{-\frac{D_{Trace}}{3}\ \cdot b}\ =\ S_0\cdot e^{-ADC\cdot b}\ 
 \end{equation}
 
-Le tiers de la trace du DT est égale au coefficient apparent de diffusion ADC. Cette méthode permet d’obtenir l’ADC à partir d’imagerie pondérée en diffusion avec un gradient directionnel défini. 
-
-La Fraction d’Anisotropie (FA) permet d’obtenir un scalaire variant entre 0 et 1 décrivant l’anisotropie du tenseur. Une valeur proche de zéro indique un tenseur isotrope alors qu’une valeur de 1 indique que $\lambda_1\gg\lambda_2\ \approx\lambda_3$.
+Le tiers de la trace du DT est égale au coefficient apparent de diffusion ADC. Cette méthode permet d’obtenir l’ADC à partir d’imagerie pondérée en diffusion avec un gradient directionnel défini. La Fraction d’Anisotropie (FA) permet d’obtenir un scalaire variant entre 0 et 1 décrivant l’anisotropie du tenseur. Une valeur proche de zéro indique un tenseur isotrope alors qu’une valeur de 1 indique que $\lambda_1\gg\lambda_2\ \approx\lambda_3$.
 \begin{equation}
 \nonumber
 FA=\ \sqrt{\frac{3}{2}\cdot\frac{{(\lambda_1-\ \hat{\lambda})}^2+\ {(\lambda_2-\ \hat{\lambda})}^2+\ {(\lambda_3-\ \hat{\lambda})}^2}{\lambda_1^2+\lambda_2^2+\ \lambda_3^2\ }}
 \end{equation}
 
-Avec $\hat{\lambda}$ valeur moyenne des trois valeurs propres $\lambda_1$,$\lambda_2$,$\lambda_3$. 
+Avec $\hat{\lambda}$ valeur moyenne des trois valeurs propres $\lambda_1$, $\lambda_2$, $\lambda_3$. 
 
 \subsubsection{Tractrographie à partir d’un tenseur de diffusion}
 
