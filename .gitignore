@@ -9,6 +9,14 @@
 *.mtc1
 *.mtc3
 *.run.xml
+*.blg
+*.log
+*.bcf
+*.mtc
+*.mtc0
+*.dvi
+*.brf
+
 
 images
 reference_from_zotero
