@@ -6,6 +6,7 @@
 \minitoc
 \section{Le myocarde}
 
+
 \subsection{Généralité sur le fonctionnement et l'anatomie du cœur }
 
 Le cœur est un organe central pour le fonctionnement du vivant. Il permet d’amener le sang riche en oxygène dans tous les organes du corps, puis de rapporter le sang appauvri en sortie des organes dans les poumons pour le recharger en oxygène. Pour irriguer l’ensemble du corps humain, le cœur est connecté à un réseau de vaisseaux sanguins incluant les artères (allant du cœur aux organes), les veines (des organes au cœur) et les capillaires (ensemble de petits vaisseaux irriguant les organes). Le cœur est lui-même irrigué par un réseau de vaisseaux sanguins, appelés les coronaires. \\
@@ -25,7 +26,7 @@ Le cœur est constitué de quatre cavités : l’oreillette gauche (OG), l’ore
 Le sang circule dans un sens unique et synchrone. Le cœur gauche propulse le sang riche en oxygène dans les zones supérieures et inférieures du corps humain après que le sang ait été enrichi en oxygène dans les poumons grâce aux contractions du cœur droit. Le cœur est situé à proximité des poumons, de ce fait le cœur droit est moins musclé que le cœur gauche qui lui doit permettre l’irrigation en sang riche en oxygène dans tout l’organisme. Le cycle cardiaque est divisé en deux parties, les contractions (systole) et relaxations (diastole). Les contractions du cœur sont rendues possibles grâce à la capacité du tissu cardiaque  (appelé myocarde) à se contracté de façon séquentielle. 
 
 \subsection{La paroi du cœur}
-La paroi du cœur est constituée de trois couches, de l’extérieur vers l’intérieur, l’épicarde, le myocarde et l’endocarde. Chaque couche a un rôle unique dans la contraction du cœur. 
+La paroi du cœur est constituée de trois couches, de l’extérieur vers l’intérieur, l’épicarde, le myocarde et l’endocarde. Chaque couche a un rôle unique dans la contraction du cœur.
 
 \begin{bulletList}
 \item L’épicarde est la couche extérieure du cœur (le mésothéliome), c’est une membrane composée de cellule épithéliales pavimenteuses protégeant le reste de la paroi, il est attaché au péricarde.
@@ -36,6 +37,7 @@ La paroi du cœur est constituée de trois couches, de l’extérieur vers l’i
 \end{bulletList}
 
 Les myocytes \textcolor{red}{TODO ajouter ici une figure montrant de myocytes en histologie !!} sont de formes allongés/cylindriques de 100 à 300 $\mu$m de long pour 20 à 30 $\mu$m de diamètre. La membrane des myocytes est une barrière semi-perméable (constitué à 70  \% de lipides) entre les milieux aqueux intra et extra cellulaire. Il existe d’autres cellules que les cardiomyocytes dans le myocarde : 
+
 
  \begin{bulletList}
  \item Cellules musculaires lisses et endothéliales composant la paroi des coronaires
@@ -76,6 +78,7 @@ A l'échelle macroscopique, l’organisation des myofibres dans le VG est bien d
   \label{fig:model_fibre}
 \end{figure}
 
+
 \textcolor{red}{et les oreillettes et le restes. Des descriptions principalement issus d'échantillon ex-vivo existent aussi pour les autres régions du coeur telles que les oreillettes [https://pubmed.ncbi.nlm.nih.gov/27071829/] ou les veins pulmonaires [ref (Doste R, Soto-Iglesias D, Bernardino G, Alcaine A, Sebastian R, Giffard-Roisin S, Sermesant M, Berruezo A, Sanchez-Quintana D, Camara O. A rule-based method to model myocardial fiber orientation in cardiac biventricular geometries with outflow tracts. Int J Numer Method Biomed Eng 35: e3185, 2019. doi:10.1002/cnm.3185) ]} \\
 
 \textcolor{red}{Enfin l’architecture du cœur entier est complexe et ne dispose pas encore de modèle complètement établi dans la littérature.} Plusieurs modèles théorique ont été proposé. Un des plus connus représente les myofibres comme étant un ensemble, le cœur pouvant être déroulé et enroulé sous la fome d’une bande, la bande myocardique. Il a été théorisé par Torrens-gasp ne 1957 \cite{Kocica2006}. Ce modèle se base principalement sur une dissection du cœur effectué par un opérateur. Ce modèle est remis en cause depuis le début des années 2000 avec l’apparition de nouvelles méthodes d’imagerie permettant d’obtenir l’orientation des myofibres en trois dimensions \cite{MacIver2017_end_I} \cite{MacIver2017_end_II}. \\  %(Figure \ref{fig:model_fibre}.A).
@@ -93,6 +96,7 @@ A l'échelle macroscopique, l’organisation des myofibres dans le VG est bien d
 %\end{figure}
 
 Les contractions du VG et du VD sont rendues possible grâce à la capacité des myocytes de se contracter sous l’effet d’un potentiel électrique \cite{renard:tel-04344684}. On appelle potentiel d’action (PA) cardiaque la modification de la différence de potentiel entre l’intra et l’extracellulaire par les échanges entre différents ions : potassium (K+), sodium (Na+) et calcium (Ca2+). Le PA peut être résumé en plusieurs phases comme suit  (Figure \ref{fig:fig_PA}.A): 
+
 \begin{enumerate}
 \setcounter{enumi}{-1}
 \item Dépolarisation rapide
@@ -147,9 +151,9 @@ Pour conclure, le cœur est un organe complexe dont la fonction première est de
 \subsection{Du proton à l’image}
 \subsubsection{La physique, du proton au signal}
 
-L’imagerie par résonnance magnétique (IRM) est une technologie d’acquisition d’image en trois dimensions non invasives utilisant les propriétés gyromagnétiques de différents éléments chimiques tels que l’hydrogène, le phosphore ou le carbone. Comme le corps humain est constitué majoritairement de molécules d’eau $H_2O$ ( environ 60 $\%$ pour un homme adulte), il est courant que les acquisitions IRM soient centrées sur la fréquence de résonnance de l’hydrogène. Ces acquisitions reposent sur le phénomène de Résonance Magnétique Nucléaire (RMN) qui se déroule en trois étapes : la polarisation, la résonnance et la relaxation \cite{HolgerFrsterling2009}. 
+L’imagerie par résonnance magnétique (IRM) est une technologie d’acquisition d’image en trois dimensions non invasives utilisant les propriétés gyromagnétiques de différents éléments chimiques tels que l’hydrogène, le phosphore ou le carbone. Comme le corps humain est constitué majoritairement de molécules d’eau $H_2O$ ( environ 60 $\%$ pour un homme adulte), il est courant que les acquisitions IRM soient centrées sur la fréquence de résonnance de l’hydrogène. Ces acquisitions reposent sur le phénomène de Résonance Magnétique Nucléaire (RMN) qui se déroule en trois étapes : la polarisation, la résonnance et la relaxation \cite{HolgerFrsterling2009}.
 
-La polarisation est l’étape préliminaire avant toute acquisition, elle s’opère lorsque l’objet à imager ( patient/échantillon) est positionné dans le tunnel de l’imageur IRM. Le proton (hydrogène) possède des propriétés magnétiques qui peuvent être représenté sous la forme d’un vecteur en rotation sur lui-même : le spin. Lorsque le proton n’est soumis à aucun champ magnétique, le vecteur aura une orientation aléatoire, cependant, s’il est soumis à un champ magnétique suffisamment fort, il sera orienté dans l’axe du champ magnétique. Les spins du protons ou spins protoniques ont toujours leurs moments propres gyromagnétiques qui précesse (ou plus sommairement, tourne) à la fréquence de Larmor $\nu 0 =\gamma H \cdot B_0 $ avec $\gamma H$ le rapport gyromagnétique du proton et $B_0$ le champ magnétique de l’imageur. La polarisation est donc l’aimantation M induite par l’interaction des spins et de $B_0$. Si nous décomposons M selon les axes x,y et z, nous avons donc $M_{x,y} = 0$ et $M_z$ = $M_0$, avec $M_0$ l’aimatation totale. 
+La polarisation est l’étape préliminaire avant toute acquisition, elle s’opère lorsque l’objet à imager ( patient/échantillon) est positionné dans le tunnel de l’imageur IRM. Le proton (hydrogène) possède des propriétés magnétiques qui peuvent être représenté sous la forme d’un vecteur en rotation sur lui-même : le spin. Lorsque le proton n’est soumis à aucun champ magnétique, le vecteur aura une orientation aléatoire, cependant, s’il est soumis à un champ magnétique suffisamment fort, il sera orienté dans l’axe du champ magnétique. Les spins du protons ou spins protoniques ont toujours leurs moments propres gyromagnétiques qui précesse (ou plus sommairement, tourne) à la fréquence de Larmor $\nu 0 =\gamma H \cdot B_0 $ avec $\gamma H$ le rapport gyromagnétique du proton et $B_0$ le champ magnétique de l’imageur. La polarisation est donc l’aimantation M induite par l’interaction des spins et de $B_0$. Si nous décomposons M selon les axes x,y et z, nous avons donc $M_{x,y} = 0$ et $M_z$ = $M_0$, avec $M_0$ l’aimatation totale.
 
 La deuxième étape est la résonnance. Avant toute chose, il est nécessaire de comprendre que l’aimantation M demeure trop faible  par rapport à $B_0$ pour être mesurer en l’état. Pour cela nous allons rajouter une antenne d’émission (Tx) qui va venir induire un nouveau champ B1 orthogonal à $B_0$ et en rotation autour de $B_0$ à la fréquence de Larmor (dépendante de la valeur du champ $B_0$).  L’application d’onde radiofréquence (RF) va faire basculer l’aimantation M vers le champ $B_1$. L’aimantation M n’est donc plus parallèle à l’axe z et cela engendre donc une aimantation $M_{x,y}$ (aimantation transversale) en plus de l’aimantation $M_z$ (aimantation longitudinale), dépendantes de l’angle de bascule $\alpha$ (\textit{flip angle}) appliqué à M :
 \begin{equation}
@@ -164,12 +168,12 @@ La deuxième étape est la résonnance. Avant toute chose, il est nécessaire de
 
 Avec $\alpha =\ \gamma H\cdot \ \tau$ et $\tau\ $ durée de l’impulsion RF \cite{Ernst1966}.
 
-Lorsque l’impulsion RF n’est plus maintenue, le proton cherche à revenir à sa position d’équilibre, c’est-à-dire revenir parallèle à l’axe de  $B_0$, c’est la phase de relaxation. Le signal qui résulte du retour à l’équilibre est appelé le signal de décroissance d’induction libre plus communément appelé FID (\textit{Free Induction Decay}). 
+Lorsque l’impulsion RF n’est plus maintenue, le proton cherche à revenir à sa position d’équilibre, c’est-à-dire revenir parallèle à l’axe de  $B_0$, c’est la phase de relaxation. Le signal qui résulte du retour à l’équilibre est appelé le signal de décroissance d’induction libre plus communément appelé FID (\textit{Free Induction Decay}).
 \\
-Comme M est divisée en deux composantes $M_{x,y}$  et $M_z$, le retour à l’équilibre sera caractérisé par le retour de l’aimantation transverse $M_{x,y}$  à 0 et un retour de l’aimantation longitudinale $M_z$ à sa valeur initiale en suivant les équations de Bloch \cite{HolgerFrsterling2009}: 
+Comme M est divisée en deux composantes $M_{x,y}$  et $M_z$, le retour à l’équilibre sera caractérisé par le retour de l’aimantation transverse $M_{x,y}$  à 0 et un retour de l’aimantation longitudinale $M_z$ à sa valeur initiale en suivant les équations de Bloch \cite{HolgerFrsterling2009}:
 \begin{equation}
 \nonumber
-	M_{x,y}\left(t\right)=M_{x,y}\left(0\right)\ {\cdot\ e}^{-\frac{t}{T2}}\cdot\ e^{-i\omega_0t}	
+	M_{x,y}\left(t\right)=M_{x,y}\left(0\right)\ {\cdot\ e}^{-\frac{t}{T2}}\cdot\ e^{-i\omega_0t}
 	\end{equation}
 
 \begin{equation}
@@ -179,19 +183,19 @@ Comme M est divisée en deux composantes $M_{x,y}$  et $M_z$, le retour à l’�
 
 T1 et T2 sont les constantes de temps caractéristiques de la relaxation en RMN, respectivement 63 $\%$ du temps nécessaire à l’aimantation longitudinale à revenir à sa valeur initiale $M_z$(t = 0) et 63 $\%$ du temps nécessaire à l’aimantation transverse à revenir à 0. La valeur de T1 est dépendante du tissu et de sa structure (taille…). La relaxation T1 correspond à l’interaction spin-réseau, c’est-à-dire entre le proton et le champ $B_0$ alors que la relaxation T2 correspond à l’interaction spin-spin, l’interaction entre les protons.
 
-Concernant le T2, si l’on regarde de plus près les équations de Bloch, l’aimantation $M_z$ ne dépend d’aucuns paramètres physiques, là ou Mx,y dépend de la fréquence de Larmor dépendante elle-même de la valeur du champ  $B_0$. Les inhomogénéités de $B_0$ induisent donc une accélération de la décroissance de $M_{x,y}$  résultant une nouvelle constante de temps T2* plus courte que T2 car les spins ne précessent plus à la même fréquence. 
+Concernant le T2, si l’on regarde de plus près les équations de Bloch, l’aimantation $M_z$ ne dépend d’aucuns paramètres physiques, là ou Mx,y dépend de la fréquence de Larmor dépendante elle-même de la valeur du champ  $B_0$. Les inhomogénéités de $B_0$ induisent donc une accélération de la décroissance de $M_{x,y}$  résultant une nouvelle constante de temps T2* plus courte que T2 car les spins ne précessent plus à la même fréquence.
 
 \subsubsection{Transformée de Fourier, espace de Fourier et transformée inverse}
 
-Un signal est caractérisé par trois éléments : la fréquence, l’amplitude et la phase. L’analyse fréquentielle utilise la Transformée de Fourier (TF)  pour analyser ces signaux et exprimer l’amplitude (et la phase) en fonction de la fréquence. 
+Un signal est caractérisé par trois éléments : la fréquence, l’amplitude et la phase. L’analyse fréquentielle utilise la Transformée de Fourier (TF)  pour analyser ces signaux et exprimer l’amplitude (et la phase) en fonction de la fréquence.
  La TF d’une fonction f(t) en 1 D est :
- 
+
  \begin{equation}
  \nonumber
   TF(f(t)) = \int_{-\infty}^{+\infty}{f(t)\cdot e^{-j2\pi \nu t}dt}
  \end{equation}
- avec $\nu$ la fréquence (Hz).  
-La TF d’un signal réel est un signal complexe avec une phase et une magnitude, toutes deux exprimé en fonction de la fréquence. Chaque fréquence composant un signal 1D dans le domaine temporel est représenté sous la forme d’une impulsion de Dirac dans le domaine fréquentiel à cette même fréquence (Figure \ref{fig:ft_1D}).  
+ avec $\nu$ la fréquence (Hz).
+La TF d’un signal réel est un signal complexe avec une phase et une magnitude, toutes deux exprimé en fonction de la fréquence. Chaque fréquence composant un signal 1D dans le domaine temporel est représenté sous la forme d’une impulsion de Dirac dans le domaine fréquentiel à cette même fréquence (Figure \ref{fig:ft_1D}).
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -201,7 +205,7 @@ La TF d’un signal réel est un signal complexe avec une phase et une magnitude
   \label{fig:ft_1D}
 \end{figure}
 \clearpage
-Dans le cas d’un signal en 2 dimensions  (image),  la TF sera aussi un signal complexe en 2 dimensions (Figure \ref{fig:ft_2D}). Le plus souvent, ce signal sera exprimé spatialement en fonction des axes x et y, sous la forme f(x,y) avec sa transformée de Fourier F associé définie avec les fréquences spatiales kx et ky : 
+Dans le cas d’un signal en 2 dimensions  (image),  la TF sera aussi un signal complexe en 2 dimensions (Figure \ref{fig:ft_2D}). Le plus souvent, ce signal sera exprimé spatialement en fonction des axes x et y, sous la forme f(x,y) avec sa transformée de Fourier F associé définie avec les fréquences spatiales kx et ky :
 \begin{equation}
 \nonumber
 F(kx,ky)=\iint_{-\infty}^{+\infty}{f(x,y)\cdot e^{-j2\pi(kx\cdot x+ky\cdot y)}dxdy}
@@ -220,7 +224,7 @@ Un espace de Fourier en 2D est aussi appelé espace K, avec en son centre (kx = 
 
 Il existe aussi la transformée inverse de Fourier (TFi) qui permet de passer du domaine fréquentiel au domaine spatial :
 \begin{equation}
-\nonumber  
+\nonumber
 f(x,y)=\iint_{-\infty}^{+\infty}{F\left(kx,ky\right)\cdot e^{j2\pi(kx\cdot x+ky\cdot y)}dkxdky}
 \end{equation}
 
@@ -236,15 +240,15 @@ Grâce à la TFi, il est possible de modifier une image dans l’espace de Fouri
 
 	\subsubsection{Obtenir une image à partir d’un signal RMN et de l’espace de Fourier}
 
-Nous avons vu dans la partie i les différentes étapes amenant à obtenir un signal FID correspondant aux caractéristiques locales du tissu et dans la partie ii qu’il était possible d’obtenir une image en 2D à partir d’un espace fréquentielle appelé espace K. L’objectif in fine est d’obtenir une image ou un volume avec un contraste permettant un diagnostic. 
-Le signal S de la FID provenant d’un volume V est donnée par l’équation : 
+Nous avons vu dans la partie i les différentes étapes amenant à obtenir un signal FID correspondant aux caractéristiques locales du tissu et dans la partie ii qu’il était possible d’obtenir une image en 2D à partir d’un espace fréquentielle appelé espace K. L’objectif in fine est d’obtenir une image ou un volume avec un contraste permettant un diagnostic.
+Le signal S de la FID provenant d’un volume V est donnée par l’équation :
 \begin{equation}
 \nonumber
 S\left(t\right)=\oint_{V}{M_{x,y}\left(r,t\right)\ dr}
 \end{equation}
 avec r = position de V à l’instant t.
 
-Nous avons vu que le proton précesse à la fréquence de Larmor, elle-même dépendante du champ magnétique appliqué au proton. S’il est possible de faire varier spatialement $B_0$, alors la fréquence de Larmor changera aussi. En faisant varier spatialement $B_0$, il est possible de remplir un espace de Fourier puis au moyen de TFi d’obtenir une image en 2D. Comme $B_0$ n’est orienté que selon l’axe z, il est seulement possible de le faire varier selon cet axe. Les variations spatiales de $B_0$ sont faites en utilisant des gradients de champ magnétique appelé $G_x$, $G_y$ et $G_z$ pour les axes x,y et z respectivement (Figure \ref{fig:b_gx}). Ils sont exprimés en mT/m. Le nouveau champ B s’écrit : 
+Nous avons vu que le proton précesse à la fréquence de Larmor, elle-même dépendante du champ magnétique appliqué au proton. S’il est possible de faire varier spatialement $B_0$, alors la fréquence de Larmor changera aussi. En faisant varier spatialement $B_0$, il est possible de remplir un espace de Fourier puis au moyen de TFi d’obtenir une image en 2D. Comme $B_0$ n’est orienté que selon l’axe z, il est seulement possible de le faire varier selon cet axe. Les variations spatiales de $B_0$ sont faites en utilisant des gradients de champ magnétique appelé $G_x$, $G_y$ et $G_z$ pour les axes x,y et z respectivement (Figure \ref{fig:b_gx}). Ils sont exprimés en mT/m. Le nouveau champ B s’écrit :
 \begin{equation}
 \nonumber
 B=B_0+(0,0,\ x \cdot G_x,+y \cdot G_y+z \cdot G_z)
@@ -258,13 +262,13 @@ B=B_0+(0,0,\ x \cdot G_x,+y \cdot G_y+z \cdot G_z)
   \label{fig:b_gx}
 \end{figure}
 
-La sélectivité spatiale à l’aide de la fréquence de Larmor est faite en deux étapes, l’excitation sélective qui choisira la coupe (par convention l’axe z) à l’aide de $G_z$ (gradient de sélection de coupe) et l’encodage spatiale en 2D avec $G_x$ et $G_y$. 
-Pour une position z0 dans l’imageur, en n’utilisant que $G_z$, la fréquence de Larmor à cette position sera : 
+La sélectivité spatiale à l’aide de la fréquence de Larmor est faite en deux étapes, l’excitation sélective qui choisira la coupe (par convention l’axe z) à l’aide de $G_z$ (gradient de sélection de coupe) et l’encodage spatiale en 2D avec $G_x$ et $G_y$.
+Pour une position z0 dans l’imageur, en n’utilisant que $G_z$, la fréquence de Larmor à cette position sera :
 \begin{equation}
 \nonumber
 \nu\left(z0\right)=\ \gamma H\cdot\left(B0+z_0G_z\right)
 \end{equation}
-L’application de $G_z$, avec un impulsion RF permet de générer une aimantation transversale $M_{x,y}$ sur un volume d’intérêt dont l’épaisseur $\Delta z$ dépendra de la bande passante de l’impulsion RF et de l’intensité de $G_z$ : 
+L’application de $G_z$, avec un impulsion RF permet de générer une aimantation transversale $M_{x,y}$ sur un volume d’intérêt dont l’épaisseur $\Delta z$ dépendra de la bande passante de l’impulsion RF et de l’intensité de $G_z$ :
 \begin{equation}
 \nonumber
 \Delta z=\frac{\Delta f}{\gamma H \cdot G_z}
@@ -272,7 +276,7 @@ L’application de $G_z$, avec un impulsion RF permet de générer une aimantati
 
 Le codage spatial 2D est l’étape qui consiste à remplir l’espace K à la position z0.  Par convention, les axes l’espace K sont appelés direction d’encodage de lecture et direction d’encodage de phase. Le gradient d’encodage de phase choisira la ligne de l’espace K qui sera remplie et le gradient de lecture remplira cette ligne.
 
-L’ensemble de ces étapes nécessaire à l’obtention d’un espace de Fourier rempli peut-être schématiser temporellement à l’aide d’un chronogramme (Figure \ref{fig:chrono}). La taille et la résolution de l’espace K est dépendant de la taille de l’image résultante que l’on souhaite obtenir.  Si le champ de vue (FOV, field of view) de l’image souhaitée est de $Fov_x$ et $Fov_y$,  les tailles (en unité spatiale [mm])  de champs de vue selon l’axe x et l’axe y, respectivement, avec une matrice de taille MxN, alors résolution spatiale de l’image sera le rapport entre le champ de vue et la taille de la matrice de l’image( $\frac{{Fov}_x}{M},\frac{{Fov}_y}{N} )$. L’incrément des fréquences spatiales ($\Delta kx$ et $\Delta ky$ ) est donné par les relations $\Delta kx= \frac{1}{{Fov}_x}$ et $\Delta ky= \frac{1}{{Fov}_y}$. 
+L’ensemble de ces étapes nécessaire à l’obtention d’un espace de Fourier rempli peut-être schématiser temporellement à l’aide d’un chronogramme (Figure \ref{fig:chrono}). La taille et la résolution de l’espace K est dépendant de la taille de l’image résultante que l’on souhaite obtenir.  Si le champ de vue (FOV, field of view) de l’image souhaitée est de $Fov_x$ et $Fov_y$,  les tailles (en unité spatiale [mm])  de champs de vue selon l’axe x et l’axe y, respectivement, avec une matrice de taille MxN, alors résolution spatiale de l’image sera le rapport entre le champ de vue et la taille de la matrice de l’image( $\frac{{Fov}_x}{M},\frac{{Fov}_y}{N} )$. L’incrément des fréquences spatiales ($\Delta kx$ et $\Delta ky$ ) est donné par les relations $\Delta kx= \frac{1}{{Fov}_x}$ et $\Delta ky= \frac{1}{{Fov}_y}$.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -282,10 +286,10 @@ L’ensemble de ces étapes nécessaire à l’obtention d’un espace de Fourie
   \label{fig:chrono}
 \end{figure}
 
-Le temps d’un séquence IRM est appelé TR (temps de répétition) et le temps entre l’impulsion RF et la lecture (Figure \ref{fig:chrono}, Etape III) est le temps d’écho (TE). 
+Le temps d’un séquence IRM est appelé TR (temps de répétition) et le temps entre l’impulsion RF et la lecture (Figure \ref{fig:chrono}, Etape III) est le temps d’écho (TE).
 
 La séquence présentée ici est une séquence dite d’écho de gradient, du fait que le signal lu par l’antenne est codé par le gradient de lecture. Le signal varie en T2* (décroissance de la FID) du aux inhomogénéités de $B_0$, l’application d’une impulsion RF de 180° avant le gradient de lecture permet de les corriger et d’obtenir un signal variant en T2 (écho de spin).
-Nous avons vu dans la partie i que le temps de relaxation T1 dépend du tissu/milieu, une conséquence de cela est que l’angle de bascule optimum pour avoir le plus d’aimantation à un milieu donné sera défini par l’équation suivante \cite{Ernst1966} : 
+Nous avons vu dans la partie i que le temps de relaxation T1 dépend du tissu/milieu, une conséquence de cela est que l’angle de bascule optimum pour avoir le plus d’aimantation à un milieu donné sera défini par l’équation suivante \cite{Ernst1966} :
 \begin{equation}
 \nonumber
 \cos{\alpha}=\ e^{-\frac{TR}{T1}}
@@ -296,13 +300,13 @@ La combinaison de l’angle de bascule $\alpha$, de TR et du TE permet de rempli
 \section{L’Imagerie Pondérée en Diffusion}
 \subsection{Principes physiques}
 \subsubsection{Le mouvement des molécules d’eau}
-Dans la partie précédente, nous avons vu que la FID était dépendante de la fréquence de Larmor, et nous avons utilisé cette propriété pour la faire varier en utilisant un champ magnétique. Elle est aussi dépendante du moment gyroscopique de l’atome d’hydrogène ($^1H$), et comme 90 \% de l’hydrogène du corps humain est localisé dans les molécules d’eau ($H_2O$), le signal RMN est donc dominé par l’eau. La quantité de signal recueilli sera maximal dans une zone avec un grande densité de molécules d’eau et décroira en fonction de cette densité, jusqu’à ne plus avoir de signal s’il n’y a plus de molécules d’eau \cite{Mezer2016}. 
+Dans la partie précédente, nous avons vu que la FID était dépendante de la fréquence de Larmor, et nous avons utilisé cette propriété pour la faire varier en utilisant un champ magnétique. Elle est aussi dépendante du moment gyroscopique de l’atome d’hydrogène ($^1H$), et comme 90 \% de l’hydrogène du corps humain est localisé dans les molécules d’eau ($H_2O$), le signal RMN est donc dominé par l’eau. La quantité de signal recueilli sera maximal dans une zone avec un grande densité de molécules d’eau et décroira en fonction de cette densité, jusqu’à ne plus avoir de signal s’il n’y a plus de molécules d’eau \cite{Mezer2016}.
 
-Le mouvement des molécules pendant une examen IRM peut être induit par plusieurs facteurs. Le premier cas est le cas, le plus simple, le sujet se déplace alors la zone à imager se déplace aussi, ce mouvement est communément appelé \textit{bulk} (grossier en anglais), il est caractérisé par un mouvement de plus d’un pixel de toute la zone d’intérêt. 
+Le mouvement des molécules pendant une examen IRM peut être induit par plusieurs facteurs. Le premier cas est le cas, le plus simple, le sujet se déplace alors la zone à imager se déplace aussi, ce mouvement est communément appelé \textit{bulk} (grossier en anglais), il est caractérisé par un mouvement de plus d’un pixel de toute la zone d’intérêt.
 
-Un mouvement unidirectionnel des molécules d’eau au sein même d’un voxel sera interprété comme un \textit{flux} de molécules d’eau. L’effet du flux sur le signal RMN se traduit par un déplacement de la fréquence de la FID, c’est pourquoi l’imagerie de phase permet de voir le flux comme par exemple le flux sanguin \cite{Wymer2020}. Un flux trop important (supérieur à un pixel) peut être considéré comme du bulk. 
+Un mouvement unidirectionnel des molécules d’eau au sein même d’un voxel sera interprété comme un \textit{flux} de molécules d’eau. L’effet du flux sur le signal RMN se traduit par un déplacement de la fréquence de la FID, c’est pourquoi l’imagerie de phase permet de voir le flux comme par exemple le flux sanguin \cite{Wymer2020}. Un flux trop important (supérieur à un pixel) peut être considéré comme du bulk.
 
-Le dernier mouvement (celui qui nous intéresse) est le mouvement dit de \textit{diffusion}. Ce mouvement est dû aux interactions des molécules d’eau entre elles. Dans un tissu souple, les molécules d’eau sont proches mais peuvent se déplacer (si les molécules sont toutes liées entre elles, alors l’eau devient de la glace et à contrario, si aucunes molécules ne sont liées alors l’eau devient de la vapeur). Comme elles peuvent se déplacer, elles vont vibrer les unes par rapport aux autres et vont venir stocker de la chaleur sous la forme d’agitation moléculaire. Ce phénomène fut observé par Brown au 19ème siècle, c’est pour on parle de mouvement brownien pour décrire ce phénomène. Le coefficient de diffusion (D) peut être approximée comme la vitesse d’une particule dans un milieu. 
+Le dernier mouvement (celui qui nous intéresse) est le mouvement dit de \textit{diffusion}. Ce mouvement est dû aux interactions des molécules d’eau entre elles. Dans un tissu souple, les molécules d’eau sont proches mais peuvent se déplacer (si les molécules sont toutes liées entre elles, alors l’eau devient de la glace et à contrario, si aucunes molécules ne sont liées alors l’eau devient de la vapeur). Comme elles peuvent se déplacer, elles vont vibrer les unes par rapport aux autres et vont venir stocker de la chaleur sous la forme d’agitation moléculaire. Ce phénomène fut observé par Brown au 19ème siècle, c’est pour on parle de mouvement brownien pour décrire ce phénomène. Le coefficient de diffusion (D) peut être approximée comme la vitesse d’une particule dans un milieu.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -314,11 +318,11 @@ Le dernier mouvement (celui qui nous intéresse) est le mouvement dit de \textit
 
 \subsubsection{Imager la diffusion avec la séquence écho de spin}
 
-Maintenant que le phénomène de diffusion est expliqué, nous allons voir comment il est possible l’imager. Nous avons également appris que la seule information que nous utilisons habituellement pour l'IRM est l'intensité du signal/pixel. L'intensité est dominée par la concentration d'eau (densité de protons). Elle est également influencée par le temps de relaxation du signal tel que T1 et T2. Ici, notre tâche consiste à sensibiliser l'intensité à la quantité de diffusion de l'eau ou à la constante de diffusion. 
+Maintenant que le phénomène de diffusion est expliqué, nous allons voir comment il est possible l’imager. Nous avons également appris que la seule information que nous utilisons habituellement pour l'IRM est l'intensité du signal/pixel. L'intensité est dominée par la concentration d'eau (densité de protons). Elle est également influencée par le temps de relaxation du signal tel que T1 et T2. Ici, notre tâche consiste à sensibiliser l'intensité à la quantité de diffusion de l'eau ou à la constante de diffusion.
 
-Les protons processent à la fréquence de Larmor, dépendante de la valeur du champ magnétique local (B). Sur la Figure \ref{fig:grad_1}, trois protons (donc des molécules d’eau par abus de langage) sont schématisés par des ronds rouge, bleu et vert. Après excitation (permettant d’induire la magnétisation $M_{x,y}$ nécessaire à la mesure du signal), les molécules d’eau processent toutes la même fréquence, résultant trois signaux en phase et donc la somme de ces trois signaux (le signal de Raisonnance Magnétique) est maximale. 
+Les protons processent à la fréquence de Larmor, dépendante de la valeur du champ magnétique local (B). Sur la Figure \ref{fig:grad_1}, trois protons (donc des molécules d’eau par abus de langage) sont schématisés par des ronds rouge, bleu et vert. Après excitation (permettant d’induire la magnétisation $M_{x,y}$ nécessaire à la mesure du signal), les molécules d’eau processent toutes la même fréquence, résultant trois signaux en phase et donc la somme de ces trois signaux (le signal de Raisonnance Magnétique) est maximale.
 L’application d’un premier gradient va modifier la valeur locale du champ magnétique faisant donc varier localement les fréquences de procession de chaque proton. La somme des signaux va décroitre jusqu’au à ce que les trois signaux soient complétement déphasé. Ce gradient est appelé gradient de déphasage.
-Après l’arrêt du gradient de déphasage, les trois protons vont re-processé à leur fréquence initiale (fréquence de Larmor à la valeur de $B_0$) mais chaque signal reste déphasé par rapport aux deux autres signaux. La somme des signaux est nulle dû aux déphasages. 
+Après l’arrêt du gradient de déphasage, les trois protons vont re-processé à leur fréquence initiale (fréquence de Larmor à la valeur de $B_0$) mais chaque signal reste déphasé par rapport aux deux autres signaux. La somme des signaux est nulle dû aux déphasages.
 Un second gradient opposé (en phase) au gradient de déphasage est appliqué. Il est appelé gradient de rephasage car il modifie les phases de chaque signal pour remettre les remettre en phases. La somme des signaux croit jusqu’à ce que le gradient ne soit plus appliqué. Comme le gradient de rephasage est l’opposé du gradient de déphasage, les phases de chaque signal retourne à la phase où elle était avant l’application du gradient de déphasage.
 Dans cet exemple, la positon des protons vert,bleu et rouge n'a pas varié, résultant que la somme des signaux apres le déphasage-rephasage est identique (maximale) à la valeur de la somme avant le déphasage-rephasage.
 \begin{figure}[!htbp]
@@ -344,7 +348,7 @@ Maintenant, s’il n’y a que la diffusion qui intervient pendant l’acquisiti
 
 Le problème de cette approche/séquence (Figure \ref{fig:grad_3}.A : RF – gradient de déphasage – gradient de rephasage) est qu’une partie importante du signal est perdu à cause de la décroissance T2* car le signal est lu à la fin de la séquence (gradient de lecture et de phase après le gradient de rephasage).
 
-Pour pallier à ce problème, il est utilisé une séquence dite d’écho de spin (Figure \ref{fig:grad_3}.B) avec une implusion RF de 90° puis le gradient de déphasage et ensuite une autre impulsion RF de 180° qui va venir déphasé les spins des protons et pour finir le gradient de rephasage mais qui n’est plus opposé au gradient de déphasage (car les protons ont déjà été déphasé par la deuxième impulsion RF). 
+Pour pallier à ce problème, il est utilisé une séquence dite d’écho de spin (Figure \ref{fig:grad_3}.B) avec une implusion RF de 90° puis le gradient de déphasage et ensuite une autre impulsion RF de 180° qui va venir déphasé les spins des protons et pour finir le gradient de rephasage mais qui n’est plus opposé au gradient de déphasage (car les protons ont déjà été déphasé par la deuxième impulsion RF).
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -359,7 +363,7 @@ Pour pallier à ce problème, il est utilisé une séquence dite d’écho de sp
 
 Nous avons vu dans le paragraphe précédent que la combinaison d’impulsions RF et de gradients de déphasage et de rephasage permettait d’obtenir un signal MR sensible à la diffusion. Pour rappel, les molécules d’eau bougent en fonction de plusieurs paramètres physiques internes et externes au milieu, appelé coefficient de diffusion (D). Pour la suite du chapitre, $S_0$ sera le signal MR sans gradients et S le signal avec.
 
-Plus les gradients seront espacés, plus les molécules d’eau auront le temps de se déplacer, entrainant une baisse plus importante de S. L’intervalle entre deux gradients est noté $\Delta$ . Sur un même $\Delta$, si D est grand, alors l’amplitude de S sera plus faible. 
+Plus les gradients seront espacés, plus les molécules d’eau auront le temps de se déplacer, entrainant une baisse plus importante de S. L’intervalle entre deux gradients est noté $\Delta$ . Sur un même $\Delta$, si D est grand, alors l’amplitude de S sera plus faible.
 
 Le déphasage induit par le gradient de déphasage dépend de la valeur locale du champ magnétique modifiée par la quantité de magnétisation appliqué pendant une durée. Cette modification est le produit de l’amplitude du gradient (G) ainsi que la durée du gradient ( $\delta$ ). Un produit G x $\delta$ élevé entrainera un déphasage élevé. Le déphasage influant sur S, alors G et $\delta$ aussi.
 
@@ -388,7 +392,7 @@ Si nous repartons de la définition de S, le rapport $\frac{S}{S_0}$ est égale 
 \nonumber
 \ln{\left(\frac{S}{S_0}\right)}=\ -\gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D = -b \cdot D
 \end{equation}
-Que nous pouvons transformer pour obtenir une équation affine (y = p – m.x) : 
+Que nous pouvons transformer pour obtenir une équation affine (y = p – m.x) :
 \begin{equation}
 \nonumber
 %\ln{\left(S\right)}=\ln{\left(\frac{S}{S_0}\right)}=- \gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D
@@ -462,7 +466,7 @@ La diffusion anisotropique est d’un grand intérêt en bio-imagerie pour défi
 \clearpage
 \subsubsection{Obtenir les paramètres de l’ellipsoïde avec le tenseur de diffusion}
 
-Les six paramètres de l’ellipsoïde (longueurs et vecteurs propres) ne sont pas directement disponibles à partir des six images pondérées en diffusion. Pour cela, l’on utilise un objet mathématique appelé tenseur de diffusion (DT) qui est une matrice 3x3 \cite{Basser1994}: 
+Les six paramètres de l’ellipsoïde (longueurs et vecteurs propres) ne sont pas directement disponibles à partir des six images pondérées en diffusion. Pour cela, l’on utilise un objet mathématique appelé tenseur de diffusion (DT) qui est une matrice 3x3 \cite{Basser1994}:
 \begin{equation}
 \nonumber
 DT=\ \left(\begin{matrix}D_{xx}&D_{xy}&D_{xz}\\D_{yx}&D_{yy}&D_{yz}\\D_{zx}&D_{zy}&D_{zz}\\\end{matrix}\right)
@@ -472,7 +476,7 @@ DT=\ \left(\begin{matrix}D_{xx}&D_{xy}&D_{xz}\\D_{yx}&D_{yy}&D_{yz}\\D_{zx}&D_{z
 Avec $D_{ij}$ coefficient de diffusion dans la direction i,j. DT est une matrice symétrique donc $D_{ij}=\ D_{ji}$. Pour rappel, $\ln{\left(S_{ij}\left(b\right)\right)=}\ln{\left(S_0\right)}-\ b_{ij}$.\ $D_{ij}$, connaissant la valeur de b, la direction du gradient de diffusion, $S_0$ et $S_{j}(b)$, nous obtenons $D_{ij}$.
 
 
-Pour remplir le DT, il est nécessaire d’avoir les six coefficients de diffusion  $D_{xx}$, $D_{yy}$, $D_{zz}$, $D_{xy}$, $D_{yz}$, $D_{xz}$ qui s’obtiennent en résolvant un système à 7 inconnues ($S_0$ + 6 $S_{ij}$) : 
+Pour remplir le DT, il est nécessaire d’avoir les six coefficients de diffusion  $D_{xx}$, $D_{yy}$, $D_{zz}$, $D_{xy}$, $D_{yz}$, $D_{xz}$ qui s’obtiennent en résolvant un système à 7 inconnues ($S_0$ + 6 $S_{ij}$) :
 \begin{equation}
 \nonumber
 \begin{bmatrix}
@@ -483,7 +487,7 @@ ln(S_{xy})\\
 ln(S_{yz})\\
 ln(S_{xz}) \\
 ln(S_0)
-\end{bmatrix}  
+\end{bmatrix}
 = ln(S_0)-
 \begin{bmatrix}
 {\bar{b}}_{xx} \cdot D_{xx} \\
@@ -493,7 +497,7 @@ ln(S_0)
 {\bar{b}}_{yz} \cdot D_{yz}\\
 {\bar{b}}_{xz} \cdot D_{xz} \\
 0
-\end{bmatrix} 
+\end{bmatrix}
 \end{equation}
 ${\bar{b}}_{ij}$ correspondant à l’orientation  du gradient de diffusion  à la valeur b. Diagonaliser DT permet d’obtenir les valeurs propres du DT $\lambda_1$, $\lambda_2$, $\lambda_3$ dans les axes du repère de diagonalisation (les vecteurs propres) $e_1$, $e_2$, $e_3$ avec comme direction principale de l’ellipsoïde donnée par $e_1$ et $\lambda_1$. 
 
@@ -502,7 +506,7 @@ ${\bar{b}}_{ij}$ correspondant à l’orientation  du gradient de diffusion  à 
 Les vecteurs et valeurs propres offrent une information importante sur l’anisotropie du tissu, mais ils ne peuvent être utiliser indépendamment les uns des autres. L’une des méthodes les plus simples est de faire la moyenne géométrique des images $S_{xx}$, $S_{yy}$, $S_{zz}$ : 
 \begin{equation}
 \nonumber
-S_{total}=\ \sqrt{\prod_{i=j=1}^{3}S_{i,j}}=S_0\cdot e^{-\frac{1}{3}\sum_{i=j=1}^{3}{D_{i,j}\ \cdot b}}\ =\ S_0\cdot e^{-\frac{D_{Trace}}{3}\ \cdot b}\ =\ S_0\cdot e^{-ADC\cdot b}\ 
+S_{total}=\ \sqrt{\prod_{i=j=1}^{3}S_{i,j}}=S_0\cdot e^{-\frac{1}{3}\sum_{i=j=1}^{3}{D_{i,j}\ \cdot b}}\ =\ S_0\cdot e^{-\frac{D_{Trace}}{3}\ \cdot b}\ =\ S_0\cdot e^{-ADC\cdot b}\
 \end{equation}
 
 Le tiers de la trace du DT est égale au coefficient apparent de diffusion ADC. Cette méthode permet d’obtenir l’ADC à partir d’imagerie pondérée en diffusion avec un gradient directionnel défini. La Fraction d’Anisotropie (FA) permet d’obtenir un scalaire variant entre 0 et 1 décrivant l’anisotropie du tenseur. Une valeur proche de zéro indique un tenseur isotrope alors qu’une valeur de 1 indique que $\lambda_1\gg\lambda_2\ \approx\lambda_3$.
@@ -515,7 +519,7 @@ Avec $\hat{\lambda}$ valeur moyenne des trois valeurs propres $\lambda_1$, $\lam
 
 \subsubsection{Tractrographie à partir d’un tenseur de diffusion}
 
-Jusqu’à présent, nous avons vu l’orientation du tissu dans un seul voxel. Cependant il difficile d’évaluer la direction en 3D du tissu. Pour cela des algorithmes (dit tractographie) permettant d’interpoler les valeurs et vecteurs propres du tenseur pour obtenir des fibres virtuelles (\textit{streamlines}) reliant plusieurs zones du tissu et ainsi obtenir une trajectoire globale (plusieurs voxels) des fibres dans le tissu. 
+Jusqu’à présent, nous avons vu l’orientation du tissu dans un seul voxel. Cependant il difficile d’évaluer la direction en 3D du tissu. Pour cela des algorithmes (dit tractographie) permettant d’interpoler les valeurs et vecteurs propres du tenseur pour obtenir des fibres virtuelles (\textit{streamlines}) reliant plusieurs zones du tissu et ainsi obtenir une trajectoire globale (plusieurs voxels) des fibres dans le tissu.
 
 Une fibre a besoin d’un point de départ (appelé graine ou \textit{seed} en anglais), d’une distance minimale et maximale, et d’une valeur discriminante les voxels voisins. Une tractographie est dites \textit{déterministe} si chaque graine donne une seule fibre. A contrario, elle sera \textit{probabiliste} si plusieurs fibres sont produites à partir d’une même graine.
 
@@ -529,7 +533,7 @@ Il existe plusieurs classes d’algorithmes permettant d’obtenir ces fibres, l
   \label{fig:FACT}
 \end{figure}
 \clearpage
-En plus du pas, pour éviter les mauvaises trajectoires, un seuil de FA est utilisé pour éviter les trajectoires dans les voxels étant trop isotropes. Ce seuil est couplé à un critère/seuil basé sur la courbure de la streamline, une fibre musculaire ne pouvant faire un angle droit. La courbe de la streamline doit être inférieure à ce seuil pour être ajouté à la streamline. Grâce à ces deux critères, il est possible d’éliminer les fausses approximations (Figure \ref{fig:impact_FA}). 
+En plus du pas, pour éviter les mauvaises trajectoires, un seuil de FA est utilisé pour éviter les trajectoires dans les voxels étant trop isotropes. Ce seuil est couplé à un critère/seuil basé sur la courbure de la streamline, une fibre musculaire ne pouvant faire un angle droit. La courbe de la streamline doit être inférieure à ce seuil pour être ajouté à la streamline. Grâce à ces deux critères, il est possible d’éliminer les fausses approximations (Figure \ref{fig:impact_FA}).
 
  \begin{figure}[!h]
   \begin{center}
@@ -545,7 +549,7 @@ Les fibres peuvent être masquées à l'aide d'un volume binaire. Des graines pe
 \subsubsection{Segmentation des voxels avec une orientation préférentielle à l’aide de la tractrographie}
 
 
-La tractographie permet d’obtenir une vision globale de l’orientation des fibres dans un volume 3D. Il est possible de filtrer la tractographie avec une orientation définie, cela consiste à ne garder que les fibres ayant cette orientation. Ensuite, le nombre total de fibres dans un voxel d’une grille cartésienne est compté, résultant un volume scalaire avec le nombre de fibre généré par la tractographie dans chaque voxel (Figure \ref{fig:TDI}). Cette technique est appelé \textit{Track-Density Imaging} (TDI) \cite{Calamante2010}, elle fut créée dans le but d’obtenir des images anatomiques de la matière blanche à partir d’imagerie de diffusion directionnelle. La grille cartésienne a une taille arbitraire, elle n’est pas nécessairement de la même taille et même résolution que les volumes pondérés en diffusion utilisés pour la tractographie. 
+La tractographie permet d’obtenir une vision globale de l’orientation des fibres dans un volume 3D. Il est possible de filtrer la tractographie avec une orientation définie, cela consiste à ne garder que les fibres ayant cette orientation. Ensuite, le nombre total de fibres dans un voxel d’une grille cartésienne est compté, résultant un volume scalaire avec le nombre de fibre généré par la tractographie dans chaque voxel (Figure \ref{fig:TDI}). Cette technique est appelé \textit{Track-Density Imaging} (TDI) \cite{Calamante2010}, elle fut créée dans le but d’obtenir des images anatomiques de la matière blanche à partir d’imagerie de diffusion directionnelle. La grille cartésienne a une taille arbitraire, elle n’est pas nécessairement de la même taille et même résolution que les volumes pondérés en diffusion utilisés pour la tractographie.
 
 \begin{figure}[!h]
   \begin{center}
@@ -570,16 +574,16 @@ L’IRM de diffusion permet d’obtenir la diffusion des molécules d’eau dans
 \end{figure}
 
 	\subsubsection{Le modèle HARDI (High Angular Resolution Diffusion Imaging)}
-De nombreuses approches ont été développé à partir des années 2000 pour résoudre ce problème de tenseur mal exprimé \cite{Tuch2004} \cite{Descoteaux2009} \cite{Tournier2007}. Ces différentes méthodes permettent d’obtenir une objet mathématique appelé fonction de densité d’orientation de fibres (dODF) qui traduit comme son nom l’indique, les différentes orientations de fibres dans un voxel. L’approche qui nous intéresse est appelée modèle mixte permet d’obtenir directement l’orientation des fibres. Elle se base sur l’hypothèse que les molécules d’eau se déplacent plus lentement que le temps d’acquisition d’une image. L’algorithme le plus simple de modèle mixte est l’estimation d’un multi-tenseur, chaque orientation de fibre est modélisée selon un DT : 
+De nombreuses approches ont été développé à partir des années 2000 pour résoudre ce problème de tenseur mal exprimé \cite{Tuch2004} \cite{Descoteaux2009} \cite{Tournier2007}. Ces différentes méthodes permettent d’obtenir une objet mathématique appelé fonction de densité d’orientation de fibres (dODF) qui traduit comme son nom l’indique, les différentes orientations de fibres dans un voxel. L’approche qui nous intéresse est appelée modèle mixte permet d’obtenir directement l’orientation des fibres. Elle se base sur l’hypothèse que les molécules d’eau se déplacent plus lentement que le temps d’acquisition d’une image. L’algorithme le plus simple de modèle mixte est l’estimation d’un multi-tenseur, chaque orientation de fibre est modélisée selon un DT :
 \begin{equation}
 \nonumber
-S\left(\underline{\hat{u}},b\right)=\ S_0\cdot\sum_{i=1}^{N}{f_i\bullet e}^{-b{\underline{\hat{u}}}^TD_i\underline{\hat{u}}}\ 
+S\left(\underline{\hat{u}},b\right)=\ S_0\cdot\sum_{i=1}^{N}{f_i\bullet e}^{-b{\underline{\hat{u}}}^TD_i\underline{\hat{u}}}\
 \end{equation}
 
 
-Avec $\underline{\hat{u}}$ orientation du gradient de diffusion et N le nombre d’orientation de fibre dans le modèle. Chaque orientation (ou compartiment) est caractérisée par un coefficient $f_i$ et la diffusion intrinsèque $D_i$. Avec cette nouvelle définition, un nombre N d’orientation de fibres donnant une dODF discrète (N éléments) est disponible mais elle est instable \cite{2014_3}. 
+Avec $\underline{\hat{u}}$ orientation du gradient de diffusion et N le nombre d’orientation de fibre dans le modèle. Chaque orientation (ou compartiment) est caractérisée par un coefficient $f_i$ et la diffusion intrinsèque $D_i$. Avec cette nouvelle définition, un nombre N d’orientation de fibres donnant une dODF discrète (N éléments) est disponible mais elle est instable \cite{2014_3}.
 
-Cette approche en multi compartiment (multi-tenseur) peut être généralisé pour définir la dODF non comme une fonction discrète mais une fonction continue. Le signal de diffusion S n’est la somme de chaque compartiment mais comme étant la convolution sphérique entre la dODF et le un signal R correspondant à un signal pondéré en diffusion d’un voxel avec une seule fibre (R) (Figure \ref{fig:conv_sh}). 
+Cette approche en multi compartiment (multi-tenseur) peut être généralisé pour définir la dODF non comme une fonction discrète mais une fonction continue. Le signal de diffusion S n’est la somme de chaque compartiment mais comme étant la convolution sphérique entre la dODF et le un signal R correspondant à un signal pondéré en diffusion d’un voxel avec une seule fibre (R) (Figure \ref{fig:conv_sh}).
 
  \begin{figure}[!h]
   \begin{center}
@@ -589,7 +593,7 @@ Cette approche en multi compartiment (multi-tenseur) peut être généralisé po
   \label{fig:conv_sh}
 \end{figure}
 
-La dODF est obtenue en faisant la déconvolution sphérique entre le signal S et R \cite{Tournier2007}. Pour rappel, plus la valeur de b est élevée, meilleur sera l’estimation de la directionnalité de la diffusion. Dans le cas de la neurologie une valeur de b supérieure à 3000 $s/mm^2$ est utilisée. 
+La dODF est obtenue en faisant la déconvolution sphérique entre le signal S et R \cite{Tournier2007}. Pour rappel, plus la valeur de b est élevée, meilleur sera l’estimation de la directionnalité de la diffusion. Dans le cas de la neurologie une valeur de b supérieure à 3000 $s/mm^2$ est utilisée.
 
  \begin{figure}[!h]
   \begin{center}
@@ -600,15 +604,15 @@ La dODF est obtenue en faisant la déconvolution sphérique entre le signal S et
 \end{figure}
 
 
-La déconvolution sphérique est calculée avec à l’aide des harmoniques sphériques $Y_l^m$, des fonctionnant définissant la surface d’une sphère. Les images dODF contiennent les coefficients de l’harmonique sphérique. Elles peuvent être considérées comme l’équivalent des séries de Fourier pour les fonctions en coordonnées sphériques (r,$\Theta$,$\phi$).  
+La déconvolution sphérique est calculée avec à l’aide des harmoniques sphériques $Y_l^m$, des fonctionnant définissant la surface d’une sphère. Les images dODF contiennent les coefficients de l’harmonique sphérique. Elles peuvent être considérées comme l’équivalent des séries de Fourier pour les fonctions en coordonnées sphériques (r,$\Theta$,$\phi$).
 \begin{equation}
 \nonumber
-Y_l^m\left(\theta,\phi\right)=\ \sqrt{\frac{\left(2l+1\right)\left(l-m\right)!}{4\ \pi\ \left(l+m\right)!\ }}\ P_l^m\cos{(\theta)}e^{i\omega\phi}\ 
+Y_l^m\left(\theta,\phi\right)=\ \sqrt{\frac{\left(2l+1\right)\left(l-m\right)!}{4\ \pi\ \left(l+m\right)!\ }}\ P_l^m\cos{(\theta)}e^{i\omega\phi}\
 \end{equation}
 
 
-Avec l dégrée et m ordre de l’harmonique sphérique Y. $P_l^m$ est le polynôme de Legendre correspondant à l et m. 
-Une fonction f($\Theta$,$\phi$) est définie comme un développement en harmonique sphérique (d’où l’analogie avec les séries de Fourier) : 
+Avec l dégrée et m ordre de l’harmonique sphérique Y. $P_l^m$ est le polynôme de Legendre correspondant à l et m.
+Une fonction f($\Theta$,$\phi$) est définie comme un développement en harmonique sphérique (d’où l’analogie avec les séries de Fourier) :
 \begin{equation}
 \nonumber
 f\left(\theta,\phi\right)=\ \sum_{l=0}^{l_{max}}\sum_{m=\ -l}^{l}c_l^mY_l^m\left(\theta,\phi\right)
@@ -621,15 +625,15 @@ Exemple : un degrée $l_{max}$ = 8 donne N = 45 volumes.
 
 
 \section{Exploration structurelle du myocarde }
-Dans le paragraphe précèdent, nous avons vu que le cœur avait une organisation structurée (orthotropie) mais que des défauts structurels (remodelage structurel, remplacement des myocytes par du collagène et/ou des cellules adipeuses) entrainent des complications de la fonction cardiaque. 
+Dans le paragraphe précèdent, nous avons vu que le cœur avait une organisation structurée (orthotropie) mais que des défauts structurels (remodelage structurel, remplacement des myocytes par du collagène et/ou des cellules adipeuses) entrainent des complications de la fonction cardiaque.
 %
-Dans l’optique d’identifier les maladies cardiaques, de les différencier et de les comprendre de nombreux outils ont été développés comme l’électrocardiogramme (ECG) qui permet d’obtenir l’activité du cœur et de connaitre la vitesse et le rythme cardiaque. L’ECG est, avec la prise de tension artérielle (la pression exercée sur les artères pendant la systole et la diastole) le premier examen cardiaque. Ces examens ne permettent pas d’obtenir d’informations sur la localisation des défauts locaux et structurels du myocarde, c’est pourquoi des méthodes d’imagerie sont développées à travers le monde. 
+Dans l’optique d’identifier les maladies cardiaques, de les différencier et de les comprendre de nombreux outils ont été développés comme l’électrocardiogramme (ECG) qui permet d’obtenir l’activité du cœur et de connaitre la vitesse et le rythme cardiaque. L’ECG est, avec la prise de tension artérielle (la pression exercée sur les artères pendant la systole et la diastole) le premier examen cardiaque. Ces examens ne permettent pas d’obtenir d’informations sur la localisation des défauts locaux et structurels du myocarde, c’est pourquoi des méthodes d’imagerie sont développées à travers le monde.
 
 La partie suivante, une description rapide des techniques d’imagerie sera donnée, d’abord les techniques \textit{in vivo}, sur un sujet vivant, puis \textit{ex vivo}, sur un échantillon, les méthodes \textit{ex vivo} étant par nature avec une plus grande résolution mais avec un temps d’acquisition bien supérieure à l’\textit{in vivo} et certaines méthodes sont aussi destructives pour le tissu biologique.
 
 \subsection{L'imagerie \textit{in vivo}}
 
-Identifier une pathologie cardiaque, c’est bien, le faire quand le patient est vivant, c’est mieux. Selon l’OMS (Organisme Mondiale de la Santé), 32\% des décès (17.9 millions de personne)  dans le monde sont dû à des maladies cardiovasculaires. 
+Identifier une pathologie cardiaque, c’est bien, le faire quand le patient est vivant, c’est mieux. Selon l’OMS (Organisme Mondiale de la Santé), 32\% des décès (17.9 millions de personne)  dans le monde sont dû à des maladies cardiovasculaires.
 
 Les cardiologues possèdent un vaste arsenal d’imagerie pour identifier les pathologies cardiaques et chacune de ces techniques présentes des avantages et des inconvénients. La suite de ce paragraphe sera un sommaire des techniques utilisées pour étudier la structure du myocarde.
 
@@ -637,11 +641,11 @@ Les cardiologues possèdent un vaste arsenal d’imagerie pour identifier les pa
 
 \subsubsection{L’échographie et échographie ultrarapide}
 
-L’échographie cardiaque est un examen cardiaque non invasif, non-ionisant, indolore et il peut être réalisé directement en consultation chez le cardiologue ou dans le lit d’un patient aux urgences. Les ultrasons sont produits par une sonde, vont pénétrer dans la cage thoracique puis être réfléchies par la configuration interne du thorax et produiront un écho en retour. Les échos sont captés par la sonde et une image en deux dimensions sera formé. La résolution spatiale de l’échographie est dépendante de nombreux paramètres comme la durée de l’impulsion ultrasonore ainsi que la profondeur du champ de vue. 
+L’échographie cardiaque est un examen cardiaque non invasif, non-ionisant, indolore et il peut être réalisé directement en consultation chez le cardiologue ou dans le lit d’un patient aux urgences. Les ultrasons sont produits par une sonde, vont pénétrer dans la cage thoracique puis être réfléchies par la configuration interne du thorax et produiront un écho en retour. Les échos sont captés par la sonde et une image en deux dimensions sera formé. La résolution spatiale de l’échographie est dépendante de nombreux paramètres comme la durée de l’impulsion ultrasonore ainsi que la profondeur du champ de vue.
 
-En plus de l’échographie cardiaque, un examen doppler est effectué pour analyser les flux sanguins à travers les cavités et le passage par les valves. 
+En plus de l’échographie cardiaque, un examen doppler est effectué pour analyser les flux sanguins à travers les cavités et le passage par les valves.
 
-L’échographie ultrarapide est une technique émergeante d’imagerie échographique prometteuse reposant sur la capacité de contrôler tous les éléments de la sonde échographique. Grâce à cette technique, il est possible de remonter à l’orientation des myofibres et à l’anisotropie des tissus biologiques avec imagerie en tenseur de rétrodiffusion \cite{Papadacci2014} (BTI, \textit{Backscatter Tensor Imaging}) et/ou \textit{Elastic Tensor Imaging} (ETI), une technique qui se base sur le fait que les ondes de cisaillement se propage plus rapidement dans le sens des fibres qu’entre les fibres \cite{Agger2020} . 
+L’échographie ultrarapide est une technique émergeante d’imagerie échographique prometteuse reposant sur la capacité de contrôler tous les éléments de la sonde échographique. Grâce à cette technique, il est possible de remonter à l’orientation des myofibres et à l’anisotropie des tissus biologiques avec imagerie en tenseur de rétrodiffusion \cite{Papadacci2014} (BTI, \textit{Backscatter Tensor Imaging}) et/ou \textit{Elastic Tensor Imaging} (ETI), une technique qui se base sur le fait que les ondes de cisaillement se propage plus rapidement dans le sens des fibres qu’entre les fibres \cite{Agger2020} .
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -651,8 +655,8 @@ L’échographie ultrarapide est une technique émergeante d’imagerie échogra
   \label{fig:fig_echographie}
 \end{figure}
 
-Pendant de nombreuses années, le traitement de l’imagerie ultrarapide n’était pas mis en œuvre à cause de problème de reconstruction d’images (plusieurs milliers d’images ultrasonore sont nécessaire pour obtenir en volume en trois dimensions du cœur). Avec des ordinateurs de plus en plus rapide et puissant (augmentation de la capacité de la RAM et de la fréquence d’Horloge), les algorithmes de traitement d’imagerie ultrarapide sont réalisables dans un temps de plus en plus court. 
- 
+Pendant de nombreuses années, le traitement de l’imagerie ultrarapide n’était pas mis en œuvre à cause de problème de reconstruction d’images (plusieurs milliers d’images ultrasonore sont nécessaire pour obtenir en volume en trois dimensions du cœur). Avec des ordinateurs de plus en plus rapide et puissant (augmentation de la capacité de la RAM et de la fréquence d’Horloge), les algorithmes de traitement d’imagerie ultrarapide sont réalisables dans un temps de plus en plus court.
+
 \clearpage
 \subsubsection{La tomodensitométrie ou tomographie aux rayon X}
 
@@ -662,11 +666,11 @@ La TDM est par contre une technologie ionisante, la dose de rayonnement est larg
 
 \subsubsection{L’imagerie par résonnance magnétique }
 
-Les deux méthodes d’imagerie présentées ci-dessus ont chacune leurs avantages (rapidité d’exécution, résolution spatiale, coût) mais aussi des inconvénients (coût en ressources informatiques, dose de rayonnement).  
+Les deux méthodes d’imagerie présentées ci-dessus ont chacune leurs avantages (rapidité d’exécution, résolution spatiale, coût) mais aussi des inconvénients (coût en ressources informatiques, dose de rayonnement).
 
 L’imagerie par résonnance magnétique (IRM) est une technologie d’imagerie basé sur le phénomène de résonnance magnétique nucléaire (RMN) décrit dans le paragraphe suivant du chapitre d’introduction. Ce phénomène physique fut détecté au début des années 1950 et permit depuis le développement de scanner IRM. Une instrumentation adéquate (champ magnétique puissant, antenne d’émission et de réception précises…) et les séquences IRM (chronogrammes de fonctionnement de l’instrumentation changeant de manière locale le champ magnétique) ont favorisé l’émergence de différents contrastes basés sur les temps de relaxation des tissus (T1 et T2, temps nécessaire au spin du proton pour revenir à sa position d’équilibre, voir chapitre Introduction Partie 3).
 
- L’imagerie médicale par IRM s’appuie sur l’atome d’hydrogène (H) présent en grande quantité dans les tissus mous ou biologiques. Il existe de nombreuses séquences, chacune permettant d’obtenir un contraste dit pondéré T1 ou T2 (la valeur du signal reçu par l’antenne de réception dépend plus du T1 ou du T2).  Les séquences pondérées T1 donneront un contraste permettant de visualiser la graisse et le myocarde, les séquences pondérées T2 seront utiles pour évaluer des œdèmes. En pratique, une substance avec un T1 long et un T2 long (eau) donnera un hyposignal dans une séquence pondérée T1 et un hypersignal avec une séquence pondérée T2. 
+ L’imagerie médicale par IRM s’appuie sur l’atome d’hydrogène (H) présent en grande quantité dans les tissus mous ou biologiques. Il existe de nombreuses séquences, chacune permettant d’obtenir un contraste dit pondéré T1 ou T2 (la valeur du signal reçu par l’antenne de réception dépend plus du T1 ou du T2).  Les séquences pondérées T1 donneront un contraste permettant de visualiser la graisse et le myocarde, les séquences pondérées T2 seront utiles pour évaluer des œdèmes. En pratique, une substance avec un T1 long et un T2 long (eau) donnera un hyposignal dans une séquence pondérée T1 et un hypersignal avec une séquence pondérée T2.
 
 Les images résultantes de ces séquences sont dites subjectives, le diagnostic est dépendant de l’interprétation du radiologue, basé sur les changent d’intensité des images pondérées. Pour éviter un diagnostic dépendant d’une tierce personne, des cartes de T1 et T2 sont obtenues à partir de séquences IRM spécifique, les images sont maintenant quantitatives. La valeur de chaque pixel donne une information et des abaques ou dictionnaires de valeurs de T1 et T2 existent dans la littérature (chaque valeur de T1 et T2 existent pour un champ magnétique précis).
 \text
@@ -674,7 +678,7 @@ L’IRM cardiaque \textit{in vivo} fait face à de nombreux défis. Le cœur est
 
 \subsubsection{Les contrastes de l’IRM cardiaque \textit{in vivo}}
 
-Un examen IRM cardiaque permet d’obtenir plusieurs informations sur la structure du myocarde. L’examen commence par le placement des plans de coupes puis à des séquences de cinétiques pour obtenir le mouvement cardiaque et la fraction d’éjection (pourcentage de sang éjecté des ventricules). Ensuite une cartographie T1 est réalisée et un agent de contraste à base de gadolinium est administré et une cartographie T1 est faite post injection. Pour finir une séquence en deux ou trois dimensions est réalisée pour obtenir un contraste pondéré T1 ou la fibrose cardiaque ressortira en hypersignal. La recherche en IRM étant en constante évolution, de nouvelles séquences raccourcissant la durée d’acquisition d’une image, d’obtenir une information sur l’architecture du myocarde ou alors de nouveaux contrastes révélant des pathologies jusqu’ici invisibles sans agent de contraste ont vu le jour. 
+Un examen IRM cardiaque permet d’obtenir plusieurs informations sur la structure du myocarde. L’examen commence par le placement des plans de coupes puis à des séquences de cinétiques pour obtenir le mouvement cardiaque et la fraction d’éjection (pourcentage de sang éjecté des ventricules). Ensuite une cartographie T1 est réalisée et un agent de contraste à base de gadolinium est administré et une cartographie T1 est faite post injection. Pour finir une séquence en deux ou trois dimensions est réalisée pour obtenir un contraste pondéré T1 ou la fibrose cardiaque ressortira en hypersignal. La recherche en IRM étant en constante évolution, de nouvelles séquences raccourcissant la durée d’acquisition d’une image, d’obtenir une information sur l’architecture du myocarde ou alors de nouveaux contrastes révélant des pathologies jusqu’ici invisibles sans agent de contraste ont vu le jour.
 
 \subsubsection{Le rehaussement tardif à base de gadolinium }
 
@@ -688,7 +692,7 @@ Chaque tissus/substances possèdent son propre T1 et T2, la repousse longitudina
   \label{fig:gado}
 \end{figure}
 
-Après l’injection d’un agent de contraste à base de gadolinium, celui-ci se distribue dans tout le cœur. Il va alors s’accumuler sur les zones où le myocarde est le plus endommagé comme la fibrose ou les cicatrices (Figure \ref{fig:gado}.B). Le gadolinium étant paramagnétique, il produira un hypersignal (pixel blanc) lors de l’acquisition. 
+Après l’injection d’un agent de contraste à base de gadolinium, celui-ci se distribue dans tout le cœur. Il va alors s’accumuler sur les zones où le myocarde est le plus endommagé comme la fibrose ou les cicatrices (Figure \ref{fig:gado}.B). Le gadolinium étant paramagnétique, il produira un hypersignal (pixel blanc) lors de l’acquisition.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -701,9 +705,9 @@ Après l’injection d’un agent de contraste à base de gadolinium, celui-ci s
 En choisissant un TI annulant le signal du myocarde, le contraste entre le myocarde sain et la fibrose sera maximal. L’image résultante est appelée imagerie de rehaussement tardif (Late Gadolinium Enhaucement, LGE). En fonction et du paterne de la position du rehaussement  \cite{Barison2022-ok}, il est possible d’identifier la pathologie cardiaque (Figure \ref{fig:gado_paterne}).
 \clearpage
 \subsubsection{La diffusion cardiaque \textit{in vivo} }
-Il est possible d’obtenir l’orientation des fibres musculaires grâce à la RMN en utilisant l’Imagerie Pondérée en Diffusion ou IRM de diffusion (Diffusion Weighted Imaging, DWI). Le chapitre (chapitre introduction partie 3) est consacré à l’explication mathématiques et physiques permettant d’obtenir l’orientation des fibres. 
+Il est possible d’obtenir l’orientation des fibres musculaires grâce à la RMN en utilisant l’Imagerie Pondérée en Diffusion ou IRM de diffusion (Diffusion Weighted Imaging, DWI). Le chapitre (chapitre introduction partie 3) est consacré à l’explication mathématiques et physiques permettant d’obtenir l’orientation des fibres.
 
-Le DWI existe depuis les années 1980 \cite{LeBihan1986}, elle fut utilisée chez des patients ayant eu un accident ischémique (arrêt de l’apport sanguin à un tissu/organe).  De nos jours, l’importance de cette technique n’est plus à prouver, elle est devenue une technique standard dans un protocole d’examens neurologique, et à ce jour, le DWI est utilisé en majorité en neurologie, bien qu’elle soit utilisée aussi sur le foie, les reins et pour identifier des tumeurs. C’est grâce de nouvelles méthodes d’acquisition et d’accélération comme l’imagerie echo-planar (\textit{Echo Planar Imaging}, EPI) \cite{Mansfield1977} \cite{PoustchiAmin2001} que le DWI a pu devenir une réalité clinique. L’EPI est une technique qui permet d’acquérir l’ensemble d’une coupe en une seul écho mais qui induit des artéfacts sur l’image résultantes. (Chapitre Introduction partie 3). 
+Le DWI existe depuis les années 1980 \cite{LeBihan1986}, elle fut utilisée chez des patients ayant eu un accident ischémique (arrêt de l’apport sanguin à un tissu/organe).  De nos jours, l’importance de cette technique n’est plus à prouver, elle est devenue une technique standard dans un protocole d’examens neurologique, et à ce jour, le DWI est utilisé en majorité en neurologie, bien qu’elle soit utilisée aussi sur le foie, les reins et pour identifier des tumeurs. C’est grâce de nouvelles méthodes d’acquisition et d’accélération comme l’imagerie echo-planar (\textit{Echo Planar Imaging}, EPI) \cite{Mansfield1977} \cite{PoustchiAmin2001} que le DWI a pu devenir une réalité clinique. L’EPI est une technique qui permet d’acquérir l’ensemble d’une coupe en une seul écho mais qui induit des artéfacts sur l’image résultantes. (Chapitre Introduction partie 3).
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -713,17 +717,17 @@ Le DWI existe depuis les années 1980 \cite{LeBihan1986}, elle fut utilisée che
   \label{fig:dti_inivo}
 \end{figure}
 
-L’IRM de diffusion est un candidat idéal à l’étude de l’architecture du myocarde mais le mouvement rapide et potentiellement irrégulier (le battement cardiaque est certes périodique mais la fréquence varie en fonction de divers paramètres comme d’éventuelles pathologies ou le stress du patient dans le scanner) rendent complexe l’application de l’IRM de diffusion comme examen clinique de routine (résolution de 2x2x8 mm et un temps d’acquisition proche des 30 minutes). 
+L’IRM de diffusion est un candidat idéal à l’étude de l’architecture du myocarde mais le mouvement rapide et potentiellement irrégulier (le battement cardiaque est certes périodique mais la fréquence varie en fonction de divers paramètres comme d’éventuelles pathologies ou le stress du patient dans le scanner) rendent complexe l’application de l’IRM de diffusion comme examen clinique de routine (résolution de 2x2x8 mm et un temps d’acquisition proche des 30 minutes).
 
 Néanmoins, le potentiel immense de l’IRM de diffusion cardiaque et le travail de nombreuses équipes à travers le monde ont permis d’obtenir des images pondérées de diffusion \textit{in vivo} du cœur en systole et en diastole (Figure \ref{fig:dti_inivo}) ouvrant la voie à une méthode non-invasive, en trois dimensions et sans agent de contraste pour l’étude des pathologies cardiaques.
 \clearpage
 \subsubsection{Les plans de coupe d’imagerie cardiaques}
 
- Pour permettre un diagnostic précis, complet et reproductible, en plus des axes orthogonaux du scanner (axial/transverse), coronale et sagittale), trois coupes sont utilisées en IRM cardiaque : 
+ Pour permettre un diagnostic précis, complet et reproductible, en plus des axes orthogonaux du scanner (axial/transverse), coronale et sagittale), trois coupes sont utilisées en IRM cardiaque :
  \begin{bulletList}
-\item Vue en 2 cavités (2CAV) : visualisation des parois antérieur et postérieur d’un ventricule, ainsi que l’apex. 
+\item Vue en 2 cavités (2CAV) : visualisation des parois antérieur et postérieur d’un ventricule, ainsi que l’apex.
  \item Vue en 4 cavités (4CAV) : visualisation des deux ventricules, des deux oreillettes, les valves tricuspide et mitrale et des septums intraventriculaire et intraauriculaire, elle aussi appelée vu en grand axe ou \textit{long axis} (LA).
- \item Vue en petit axe (PA) : visualisation des deux ventricules perpendiculairement à la vue en 4 cavités, elle aussi appelée en \textit{short axis} (SA). 
+ \item Vue en petit axe (PA) : visualisation des deux ventricules perpendiculairement à la vue en 4 cavités, elle aussi appelée en \textit{short axis} (SA).
 \end{bulletList}
 
 \begin{figure}[!htbp]
@@ -738,11 +742,11 @@ Néanmoins, le potentiel immense de l’IRM de diffusion cardiaque et le travail
 
 De nombreuses modalités d’imagerie permettent aux cardiologues et radiologue d’identifier les pathologies cardiaques de manière non-invasive et indolore. Il est même possible de remonter à l’orientation des chaînes de myocyte grâce à l’échographie ultrarapide et à l’IRM de diffusion. Cependant, le mouvement cardiaque, le temps d’acquisition et le mouvement du patient sont de véritables problèmes pour obtenir une image en haute résolution de l’orientation des cardiomyocytes.
 
-Pour mieux comprendre et décrire l’anatomie cardiaque, il est alors nécessaire de prélever le cœur et de l’étudier avec des techniques d’imagerie ( et potentiellement détruire le tissu) plus fines que celles employés pendant un examen cardiaque. 
+Pour mieux comprendre et décrire l’anatomie cardiaque, il est alors nécessaire de prélever le cœur et de l’étudier avec des techniques d’imagerie ( et potentiellement détruire le tissu) plus fines que celles employés pendant un examen cardiaque.
 
 \subsection{L’imagerie \textit{ex vivo}}
 
-La partie imagerie \textit{in vivo} a été introduite avec le postulat qu’il est important d’identifier une pathologie cardiaque quand le patient est toujours vivant. Malheureusement, les méthodes \textit{in vivo} ne sont pas capable d’obtenir une image suffisamment résolue pour obtenir une image nette d’une cellule cardiaque ainsi que de son fonctionnement interne.  
+La partie imagerie \textit{in vivo} a été introduite avec le postulat qu’il est important d’identifier une pathologie cardiaque quand le patient est toujours vivant. Malheureusement, les méthodes \textit{in vivo} ne sont pas capable d’obtenir une image suffisamment résolue pour obtenir une image nette d’une cellule cardiaque ainsi que de son fonctionnement interne.
 
 Les premiers travaux d’étude de l’architecture cardiaque ont été réalisés sur des cœurs \textit{ex vivo} (de l’Égypte Antique à l’ère moderne en passant par la renaissance avec les dessins du cœurs trouvés dans les carnets de Léonard de Vinci). Cela a permis une meilleure compréhension de fonctionnement du cœur : du fonctionnement interne d’une cardiomyocyte (contraction suite à une excitation électrique) jusqu’à l’architecture laminaire du myocarde en passant par la découverte du réseau (fibres) de Purkinje et des cellules de Purkinje (par Jan Evangelista Purkinje au XIXème siècle).
 
@@ -752,7 +756,7 @@ Les premiers travaux d’étude de l’architecture cardiaque ont été réalis�
 
 Le mot histologie vient du grec \textit{histos} (tissus) et \textit{logos} (discours, parole), c’est l’étude des tissus biologiques. La base de l’histologie est la dissection d’un cœur. Pour obtenir une imagerie haute résolution du myocarde au microscope, il est nécessaire de préparer le tissu avant l’imagerie. D’abord le cœur est découpé/divisé en plusieurs région d’intérêt. Le morceau de tissu sera ensuite déshydraté puis coupé dans le sens voulu (pour aider à la découpe, le bloc de tissu est immergé dans de la paraffine), chaque tranche a une épaisseur de quelques $\mu$m. Chaque coupe sera ensuite déposée sur une lame avant la coloration. Enfin la coupe de tissu colorée est scanner à la l’aide d’un microscope avec une résolution numérique de l’ordre du $\mu$m.
 
-La coloration est une étape cruciale, elle permet de mettre en évidence des éléments du tissu (cellules adipeuses, myocytes, cellules de Purkinje …) et de les différencier entre eux. 
+La coloration est une étape cruciale, elle permet de mettre en évidence des éléments du tissu (cellules adipeuses, myocytes, cellules de Purkinje …) et de les différencier entre eux.
 
 Le trichrome de Masson est très populaire car il permet de différencier les fibres de collagènes des fibres musculaires. Sur l’image, les fibres musculaires apparaitront en rouge, les cytoplasmes (substance intra-cellulaire) en rose , en bleu/vert le collagène et en noir les noyaux des cellules. Elle fait intervenir trois colorations successives : coloration des noyaux (hémalun de Mayer ou Hématoxyline de Harris), coloration du cytoplasme (mélange de fuchsine acide et de rouge ponceau) et ensuite une coloration du collagène par le vert lumière (ou bleu aniline)\cite{Golberg2024}. Grâce a ce contraste, il est possible de voir les chaînes de myocytes entourés par la MEC.
 
@@ -764,15 +768,15 @@ Le trichrome de Masson est très populaire car il permet de différencier les fi
   \label{fig:histo}
 \end{figure}
 
-Le rouge picro-sirius est une autre coloration utilisée pour visualiser le collagène, et différencier différents type de collagène présents dans les tissus biologique si le microscope utilise une lumière polarisée\cite{Puchtler_1973} . Ici le collagène est rouge (avec de la microscopie classique, la couleur devient verte ou orange en fonction du type de collagène avec de la lumière polarisée) alors que le cytoplasme et les fibres musculaire sont jaunes. 
+Le rouge picro-sirius est une autre coloration utilisée pour visualiser le collagène, et différencier différents type de collagène présents dans les tissus biologique si le microscope utilise une lumière polarisée\cite{Puchtler_1973} . Ici le collagène est rouge (avec de la microscopie classique, la couleur devient verte ou orange en fonction du type de collagène avec de la lumière polarisée) alors que le cytoplasme et les fibres musculaire sont jaunes.
 
-L’histologie est la méthode d’imagerie \textit{ex vivo} de référence (ou \textit{gold standard}) pour l’étude du tissu cardiaque et de l’orientation des myofbres grâce à sa capacité d’obtenir des images avec une grande résolution, de différencier les composantes du tissu cardiaque malgré le une destruction du cœur et une image en deux dimensions. 
+L’histologie est la méthode d’imagerie \textit{ex vivo} de référence (ou \textit{gold standard}) pour l’étude du tissu cardiaque et de l’orientation des myofbres grâce à sa capacité d’obtenir des images avec une grande résolution, de différencier les composantes du tissu cardiaque malgré le une destruction du cœur et une image en deux dimensions.
 
 \subsubsection{Fluorescence et clarity imaging}
 
 Le cœur possède une architecture en trois dimensions, donc réduire l’étude de la structure cardiaque à seulement deux n’est pas idéal pour étudier l’orthotropie du myocarde. La microscopie en fluorescence repose sur la formation d’une image par détection de la lumière émise par l’objet. L’objet est illuminé avec une source lumineuse avec une seule longueur d’onde (laser ou lumière blanche filtrée) puis les fluorophores émettent de la lumière, cette lumière sera filtrée pour ne garder que la longueur d’onde souhaité dans l’image résultante. Une image nette est obtenue en microscopie optique si l’image est située dans le foyer image de l’objectif, en déplacement la lentille, le foyer se déplace et il est possible d’obtenir un volume tridimensionnel.
 
-Les tissus biologiques ne sont pas transparents, le processus d’imagerie par microscope est donc limité. 
+Les tissus biologiques ne sont pas transparents, le processus d’imagerie par microscope est donc limité.
 
 CLARITY( Clear, Lipid-exchanged, Acrylamide-hybridized, Rigid, Imaging/immunostaining-compatible, Tissue hYdrogel) \cite{Du_2018} est une technique d'imagerie avancée développée pour rendre les tissus biologiques transparents, tout en préservant leur structure moléculaire proposé en 2013. Le processus CLARITY consiste à remplacer les lipides, qui contribuent à l'opacité des tissus, par un hydrogel transparent. Une fois les lipides extraits, le tissu devient optiquement transparent, permettant ainsi l'observation de détails fins à l'intérieur des tissus, tels que les connexions neuronales dans le cerveau, à l'aide de techniques d'imagerie en profondeur, comme la microscopie à fluorescence.
 
@@ -788,9 +792,9 @@ Clarity Imaging permet d’obtenir différents contrastes d’images (vaisseaux 
 \clearpage
 \subsubsection{Micro Computed Tomography et Syncrotron}
 
-La TDM peut aussi être utilisé sur des cœurs ex vivo. Les différents tissus ayant des radio-opacités (absorptions des rayon X) différentes, il est possible d’obtenir un volume avec un contraste en niveau de gris correspond à cette radio-opacité. Les scanners de micro computed tomography (MicroCT) possèdent un tunnel large (50 – 100 mm) leurs permettant d’imager de plus large échantillon comme des cœurs entiers de mammifères. 
+La TDM peut aussi être utilisé sur des cœurs ex vivo. Les différents tissus ayant des radio-opacités (absorptions des rayon X) différentes, il est possible d’obtenir un volume avec un contraste en niveau de gris correspond à cette radio-opacité. Les scanners de micro computed tomography (MicroCT) possèdent un tunnel large (50 – 100 mm) leurs permettant d’imager de plus large échantillon comme des cœurs entiers de mammifères.
 
-Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (dose 10 milliards de fois supérieur à la dose hospitalière), c’est pourquoi, certains scientifiques utilisent le Synclotron pour avoir un volume anatomique (en niveau de gris) avec une résolution isotope proche 1 $\mu$m \cite{Planinc2021}, contre 20-40 $\mu$m pour le MicroCT classique. 
+Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (dose 10 milliards de fois supérieur à la dose hospitalière), c’est pourquoi, certains scientifiques utilisent le Synclotron pour avoir un volume anatomique (en niveau de gris) avec une résolution isotope proche 1 $\mu$m \cite{Planinc2021}, contre 20-40 $\mu$m pour le MicroCT classique.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -800,18 +804,18 @@ Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (do
   \label{fig:uCT}
 \end{figure}
 
-Les tissus mous (composé en majorité d’eau) ont un faible poids moléculaire en comparaison avec les os. Les tissus mous vont alors provoquer une faible atténuation des rayons X et et un faible contraste au MicroCT. Pour résoudre ce problème, une nouvelle méthode de préparation des échantillons a été développer dans notre laboratoire. Les cœurs sont déshydraté avec un lavage à l’éthanol puis perfusé avec de l’éthanol et de l’ hexaméthyldisilazane (HMDS) et ensuite juste avec de l’HMDS, pour finir un séchage lent à l’air libre pendant plusieurs jours \cite{Pallares_Lupon_2022}. 
+Les tissus mous (composé en majorité d’eau) ont un faible poids moléculaire en comparaison avec les os. Les tissus mous vont alors provoquer une faible atténuation des rayons X et et un faible contraste au MicroCT. Pour résoudre ce problème, une nouvelle méthode de préparation des échantillons a été développer dans notre laboratoire. Les cœurs sont déshydraté avec un lavage à l’éthanol puis perfusé avec de l’éthanol et de l’ hexaméthyldisilazane (HMDS) et ensuite juste avec de l’HMDS, pour finir un séchage lent à l’air libre pendant plusieurs jours \cite{Pallares_Lupon_2022}.
 
-Grâce au séchage, la structure laminaire du myocarde est visible car les plans du myocarde vont s’écarter légèrement. Comme pour le \textit{clarity imaging}, algorithmes de tenseur de structure peuvent être appliqué sur les volumes pour obtenir la structure laminaire du cœur. 
+Grâce au séchage, la structure laminaire du myocarde est visible car les plans du myocarde vont s’écarter légèrement. Comme pour le \textit{clarity imaging}, algorithmes de tenseur de structure peuvent être appliqué sur les volumes pour obtenir la structure laminaire du cœur.
 
 	\subsubsection{L’Imagerie en Tenseur de structure}
 
-Les techniques d’imagerie présenté jusqu’ici sont permettent de voir la structure du myocarde, et de différencier les différentes composantes du myocarde (myocytes, MEC, capillaires…). L’orientation des chaînes de myocyte n’est pas une information directement disponible à partir de ces volumes. Pour obtenir l’orientation des myofibres, il est utilisé un objet mathématique appelé tenseur. Plus de détails sur l’obtention de l’orientation d’un vecteur à partir d’un tenseur est détaillé Partie 3. Pour obtenir un tenseur dit de structure (ST) d’une image I, structure pour éviter de le confondre avec un tenseur de diffusion, les gradients $\Delta$ dans les directions x,y et z sont calculés puis le tenseur est défini comme suit : 
+Les techniques d’imagerie présenté jusqu’ici sont permettent de voir la structure du myocarde, et de différencier les différentes composantes du myocarde (myocytes, MEC, capillaires…). L’orientation des chaînes de myocyte n’est pas une information directement disponible à partir de ces volumes. Pour obtenir l’orientation des myofibres, il est utilisé un objet mathématique appelé tenseur. Plus de détails sur l’obtention de l’orientation d’un vecteur à partir d’un tenseur est détaillé Partie 3. Pour obtenir un tenseur dit de structure (ST) d’une image I, structure pour éviter de le confondre avec un tenseur de diffusion, les gradients $\Delta$ dans les directions x,y et z sont calculés puis le tenseur est défini comme suit :
 
 
 \begin{equation}
 \nonumber
-ST = 
+ST =
 \begin{bmatrix}
 \Delta I_x \cdot \Delta I_x & \Delta I_x \cdot \Delta I_y & \Delta I_x \cdot \Delta I_z\\
 \Delta I_y \cdot \Delta I_x & \Delta I_y \cdot \Delta I_y & \Delta I_y \cdot \Delta I_z\\
@@ -821,14 +825,14 @@ ST =
 
 \subsubsection{L’IRM ex vivo à haut champ magnétique}
 
-Le champ magnétique utilisé en clinique est dit champ moyen (entre 0.55 T et 3 T), il respecte des normes d’exposition aux ondes électromagnétiques. L’intensité du signal RMN est dépendante de la valeur locale d’aimantation. En augmentant en champ magnétique, le rapport signal sur bruit (signal to noise ratio, SNR) augmente et couplé à des gradients avec de plus grandes amplitudes, la résolution spatiale devient plus fine. Le champ magnétique est généré par un aimant supraconducteur (résistance électrique très faible) qui devient supraconducteur à très faible température (< 269°) en étant plongé dans un bain d’hélium liquide. L'augmentation du champ magnétique raccourcit généralement les temps de relaxation T1 et T2 car elle intensifie les interactions spin-réseau pour T1et les inhomogénéités de champ pour T2, conduisant à une relaxation plus rapide.  Réduire les T1 et T2 ne semble pas être intéressant à première vue mais le gain de SNR permet d’obtenir une bonne pondération T1 ou T2 (petite digression, à contrario, baisser en champ magnétique rallonge les temps T1 et T2, permettent aussi un bon contraste en pondération T1 ou T2, certains constructeurs de scanner IRM se base sur ce postulat pour proposer une nouvelle gamme de scanner dit bas champ (0.55 T)).  
-L’IRM pondérée en diffusion profite beaucoup de ce gain en SNR permettant d’augmenter la valeur b sans dégrader l’intensité de l’écho RMN, révélant une structure plus encore plus précise qu’en imagerie de diffusion \textit{in vivo}. 
+Le champ magnétique utilisé en clinique est dit champ moyen (entre 0.55 T et 3 T), il respecte des normes d’exposition aux ondes électromagnétiques. L’intensité du signal RMN est dépendante de la valeur locale d’aimantation. En augmentant en champ magnétique, le rapport signal sur bruit (signal to noise ratio, SNR) augmente et couplé à des gradients avec de plus grandes amplitudes, la résolution spatiale devient plus fine. Le champ magnétique est généré par un aimant supraconducteur (résistance électrique très faible) qui devient supraconducteur à très faible température (< 269°) en étant plongé dans un bain d’hélium liquide. L'augmentation du champ magnétique raccourcit généralement les temps de relaxation T1 et T2 car elle intensifie les interactions spin-réseau pour T1et les inhomogénéités de champ pour T2, conduisant à une relaxation plus rapide.  Réduire les T1 et T2 ne semble pas être intéressant à première vue mais le gain de SNR permet d’obtenir une bonne pondération T1 ou T2 (petite digression, à contrario, baisser en champ magnétique rallonge les temps T1 et T2, permettent aussi un bon contraste en pondération T1 ou T2, certains constructeurs de scanner IRM se base sur ce postulat pour proposer une nouvelle gamme de scanner dit bas champ (0.55 T)).
+L’IRM pondérée en diffusion profite beaucoup de ce gain en SNR permettant d’augmenter la valeur b sans dégrader l’intensité de l’écho RMN, révélant une structure plus encore plus précise qu’en imagerie de diffusion \textit{in vivo}.
 
-Les noyaux atomiques précessent à une fréquence fixée par le champ magnétique, la fréquence de Larmor donnée par l’équation de Larmor : $\omega_0=\gamma \cdot B \cdot (1-\sigma)$ avec $\sigma$ le blindage chimique (les électrons génèrent un champ magnétique locale, créant un blindage au champ de l’aimant supraconducteur). Chaque molécule possède un nombre différent d’atomes d’hydrogène, chaque fréquence de Larmor est associée à une molécule. En augmentant le champ magnétique, l’écart entre les fréquences de Larmor de deux molécules différentes augmente.  La spectroscopie RMN est la capacité de différencier plusieurs molécules sur un spectre RMN. 
+Les noyaux atomiques précessent à une fréquence fixée par le champ magnétique, la fréquence de Larmor donnée par l’équation de Larmor : $\omega_0=\gamma \cdot B \cdot (1-\sigma)$ avec $\sigma$ le blindage chimique (les électrons génèrent un champ magnétique locale, créant un blindage au champ de l’aimant supraconducteur). Chaque molécule possède un nombre différent d’atomes d’hydrogène, chaque fréquence de Larmor est associée à une molécule. En augmentant le champ magnétique, l’écart entre les fréquences de Larmor de deux molécules différentes augmente.  La spectroscopie RMN est la capacité de différencier plusieurs molécules sur un spectre RMN.
 
-La graisse possède un environnement magnétique différents de la molécule d’eau (chaine carbonée), par approximation, la graisse precesse a une fréquence différente de celle de la molécule d’eau. Le déplacement chimique est la différence relative de fréquence entre une molécule et une molécule de référence (l’eau, monoxyde de dihydrogène, H20). A 1.5T, le déplacement chimique entre l’eau la graisse est de 220 Hz alors qu’9.4 T il est de 398 MHz (déplacement de 3.5 ppm). Grâce à cette plus grande différence, le contraste de la graisse sera largement atténué par rapport au signal du tissu (constitue d’eau). La méthode IDEAL \cite{Haliot2021} utilise ce postulat pour acquérir plusieurs échos et séparer les signaux de la graisse et de l’eau. Comme pour la diffusion, l’imagerie de la graisse profite largement de la hausse du champ magnétique. 
+La graisse possède un environnement magnétique différents de la molécule d’eau (chaine carbonée), par approximation, la graisse precesse a une fréquence différente de celle de la molécule d’eau. Le déplacement chimique est la différence relative de fréquence entre une molécule et une molécule de référence (l’eau, monoxyde de dihydrogène, H20). A 1.5T, le déplacement chimique entre l’eau la graisse est de 220 Hz alors qu’9.4 T il est de 398 MHz (déplacement de 3.5 ppm). Grâce à cette plus grande différence, le contraste de la graisse sera largement atténué par rapport au signal du tissu (constitue d’eau). La méthode IDEAL \cite{Haliot2021} utilise ce postulat pour acquérir plusieurs échos et séparer les signaux de la graisse et de l’eau. Comme pour la diffusion, l’imagerie de la graisse profite largement de la hausse du champ magnétique.
 
-L’étude du collagène est une thématique centrale dans l’étude de la structure cardiaque. Plusieurs éléments comme la fibrose ou les fibres de Purkinje en sont massivement constitués (Paragraphe myocarde). Comme pour les autres modalités d’imagerie, l’IRM permet de distinguer le collagène des autres composantes du myocarde. Une technique populaire en neurologie pour distinguer les gaines de myélines (isolant les neurones) est le transfert d’aimantation ou magnétisation (MT). Le principe est basé sur l'application d'une impulsion de saturation à une population de spins, généralement des protons liés à des macromolécules comme le collagène. Cette saturation est ensuite transférée à l'eau libre par échange magnétique, ce qui entraîne une diminution de l'intensité du signal de l'eau observable en RMN. Les résultats du MR sont souvent représentés sous la forme d’un ratio (MTR) entre un volume avec le module de préparation du MT  ($S_{MT}$) et un volume sans ($S_0$). 
+L’étude du collagène est une thématique centrale dans l’étude de la structure cardiaque. Plusieurs éléments comme la fibrose ou les fibres de Purkinje en sont massivement constitués (Paragraphe myocarde). Comme pour les autres modalités d’imagerie, l’IRM permet de distinguer le collagène des autres composantes du myocarde. Une technique populaire en neurologie pour distinguer les gaines de myélines (isolant les neurones) est le transfert d’aimantation ou magnétisation (MT). Le principe est basé sur l'application d'une impulsion de saturation à une population de spins, généralement des protons liés à des macromolécules comme le collagène. Cette saturation est ensuite transférée à l'eau libre par échange magnétique, ce qui entraîne une diminution de l'intensité du signal de l'eau observable en RMN. Les résultats du MR sont souvent représentés sous la forme d’un ratio (MTR) entre un volume avec le module de préparation du MT  ($S_{MT}$) et un volume sans ($S_0$).
 \begin{equation}
 \nonumber
 MTR=\ \frac{S_0-\ S_{MT}}{S_0}
@@ -838,7 +842,7 @@ ou \cite{Haliot2021} :
 
 \begin{equation}
 \nonumber
-MTR=\ \frac{S_{MT}}{S_0} 
+MTR=\ \frac{S_{MT}}{S_0}
 \end{equation}
 
 
@@ -857,7 +861,7 @@ L’IRM ex vivo à haut champ magnétique a de nombreux avantages mais il néces
 
 Le cœur est un organe en mouvement permanent, et l’architecture laminaire change en fonction de la diastole et de la systole. Établir une loi sur l’orientation des myocytes sur un cœur ex vivo quelques soit la modalité utilisée n’est pas chose aisé. Certaines équipes\cite{NiellesVallespin2019} \cite{STREETER1969} arrêtent un cœur en diastole puis un autre en systole et, après imagerie, en déduise l’orientation dans les deux cas. Dans la majorité des cas, les cœurs sont arrêtés dans une phase systolique.
 
-En conclusion, l’IRM de diffusion est un outil idéal pour étude l’orthotropie du cœur de grand mammifères (humain, brebis ou cochon) c’est pourquoi il est une méthode d’imagerie incontournable dans ce domaine. La partie Trois de ce chapitre d’introduction expliquera le foncionnement de l’IRM de diffusion et de ces métriques associées. 
+En conclusion, l’IRM de diffusion est un outil idéal pour étude l’orthotropie du cœur de grand mammifères (humain, brebis ou cochon) c’est pourquoi il est une méthode d’imagerie incontournable dans ce domaine. La partie Trois de ce chapitre d’introduction expliquera le foncionnement de l’IRM de diffusion et de ces métriques associées.
 
 
 
@@ -867,17 +871,17 @@ En conclusion, l’IRM de diffusion est un outil idéal pour étude l’orthotro
 
 Jusqu’ici, nous avons vu la diffusion dans son ensemble sans savoir si le tissu étudié été du muscle fibro-squelettique, de la matière blanche du cerveau ou tout autre tissu biologique. Le paragraphe suivant est un résumé de la diffusion dans le muscle cardiaque avec un inventaire des différentes orientations connus ainsi que de métriques dérivés du DT utilisé en IRM de diffusion cardiaque.
 
-Nous avons vu que le myocarde était constitué de cellules cardiaques appelés cardiomyocytes qui forment un système complexe de fibres musculaires laminaires (sous la forme de feuillets). Le tissu cardiaque est extrêmement perfusé (capillaires), un modèle de signal de diffusion existe pour mieux décrire la diffusion en fonction de la perfusion \cite{NiellesVallespin2019} : 
+Nous avons vu que le myocarde était constitué de cellules cardiaques appelés cardiomyocytes qui forment un système complexe de fibres musculaires laminaires (sous la forme de feuillets). Le tissu cardiaque est extrêmement perfusé (capillaires), un modèle de signal de diffusion existe pour mieux décrire la diffusion en fonction de la perfusion \cite{NiellesVallespin2019} :
 \begin{equation}
 \nonumber
 \frac{S}{S_0}=fe^{-b\left(D+D\ast\right)}+\left(1-f\right)e^{-bD}
 \end{equation}
 
-Avec f (sans dimension) la fraction de perfusion (le pourcentage du volume occupé par les capillaires). D* est appelé le coefficient de pseudo-perfusion reflétant le déphasage induit par les capillaires. 
+Avec f (sans dimension) la fraction de perfusion (le pourcentage du volume occupé par les capillaires). D* est appelé le coefficient de pseudo-perfusion reflétant le déphasage induit par les capillaires.
 
 Dans le cas d’acquisitions ex vivo, le tissu cardiaque n’est plus perfusé donc ce modèle n’est plus valide mais il le reste dans le cadre d’acquisition \textit{in vivo}.
 
-Les structures microscopiques (membranes cellulaires, matrice extra-cellulaire/espace interstitielle ...) restreignent la diffusion des molécules d’eau. L’orientation principales des cardiomyocytes sera donnée par le premier vecteur propre $e_1$, le deuxième $e_2$ donne l’orientation des feuillets (un plan) et le troisième $e_3$ est la normale du plan des feuillets (Figure \ref{fig:dti_heart_plan}). 
+Les structures microscopiques (membranes cellulaires, matrice extra-cellulaire/espace interstitielle ...) restreignent la diffusion des molécules d’eau. L’orientation principales des cardiomyocytes sera donnée par le premier vecteur propre $e_1$, le deuxième $e_2$ donne l’orientation des feuillets (un plan) et le troisième $e_3$ est la normale du plan des feuillets (Figure \ref{fig:dti_heart_plan}).
 
 \begin{figure}[!h]
 \begin{center}
@@ -887,16 +891,16 @@ Les structures microscopiques (membranes cellulaires, matrice extra-cellulaire/e
 \label{fig:dti_heart_plan}
 \end{figure}
 
-Les métriques comme la FA et l’ADC sont en moyenne égale à 0.30 et 1.5 x $10^{-3}Ò$ $mm^2/s$ respectivement. Si la perfusion, n’est pas compensée dans le calcul des métriques de diffusion, l’ADC peut-être surestimé voir supérieur à la limite théorique qu’est la diffusion de l’eau dans un milieu non contraignant (2.9 x $10^{-3}$ $mm^2/s$) \cite{Moulin2023}. 
+Les métriques comme la FA et l’ADC sont en moyenne égale à 0.30 et 1.5 x $10^{-3}Ò$ $mm^2/s$ respectivement. Si la perfusion, n’est pas compensée dans le calcul des métriques de diffusion, l’ADC peut-être surestimé voir supérieur à la limite théorique qu’est la diffusion de l’eau dans un milieu non contraignant (2.9 x $10^{-3}$ $mm^2/s$) \cite{Moulin2023}.
 
-\subsubsection{Les métriques dérivées des vecteurs propres du DT} 
+\subsubsection{Les métriques dérivées des vecteurs propres du DT}
 
 
-L’orientation des feuillets s’étend dans la direction des cardiomyocytes avec une variation helicoïdale entre l’endocarde et l’épicarde et oblique par rapport au plan tangent de l’épicarde (Figure \ref{fig:model_fibre}). 
+L’orientation des feuillets s’étend dans la direction des cardiomyocytes avec une variation helicoïdale entre l’endocarde et l’épicarde et oblique par rapport au plan tangent de l’épicarde (Figure \ref{fig:model_fibre}).
 
 L’Angle Helix (HA) est une métrique dérivée de $e_1$ permettant d’obtenir une représentation scalaire de l’orientation des myocytes \cite{Ferreira2013}. Il est obtenu en projetant $e_1$ dans un plan tangentiel au myocarde (épicarde) puis en calculant l’angle sous-tendu avec le plan en petit axe.
 
-L’indice de désordre du myocarde (\textit{Myocardium Disarray Index} ,MDI) est un métrique aussi dérivée de e1 reflétant la désorganisation locale des cardiomyocytes \cite{Wu2004} \cite{GarciaCanadilla2019}. Le MDI quantifie pour chaque voxel l’uniformité de la direction principale des myocytes au voisinage de ce même voxel. Il varie entre 0 et 1 avec 1 signifiant aucune différence d’orientation des cardiomyocytes ($e_1$ équivalent pour tous les voxels) et 0 le contraire ($e_1$ tous différents au voisinage proche du voxel). 
+L’indice de désordre du myocarde (\textit{Myocardium Disarray Index} ,MDI) est un métrique aussi dérivée de e1 reflétant la désorganisation locale des cardiomyocytes \cite{Wu2004} \cite{GarciaCanadilla2019}. Le MDI quantifie pour chaque voxel l’uniformité de la direction principale des myocytes au voisinage de ce même voxel. Il varie entre 0 et 1 avec 1 signifiant aucune différence d’orientation des cardiomyocytes ($e_1$ équivalent pour tous les voxels) et 0 le contraire ($e_1$ tous différents au voisinage proche du voxel).
 \begin{figure}[!h]
 \begin{center}
   \includegraphics[width=0.9\textwidth]{Chapitre1/mdi_HA.png}
@@ -905,7 +909,7 @@ L’indice de désordre du myocarde (\textit{Myocardium Disarray Index} ,MDI) es
 \label{fig:dti_HA_mdi}
 \end{figure}
 
-L’angle formé par les feuillets (E2A) est calculé à l’aide du vecteur $e_3$. Il est l’angle sous-tendu entre la projection du vecteur $e_3$ dans le plan radial ayant pour origine le centre du VG et le plan tangentiel à l’épicarde\cite{Dou2002}. Dans la littérature, il peut être affiché en valeur absolue. 
+L’angle formé par les feuillets (E2A) est calculé à l’aide du vecteur $e_3$. Il est l’angle sous-tendu entre la projection du vecteur $e_3$ dans le plan radial ayant pour origine le centre du VG et le plan tangentiel à l’épicarde\cite{Dou2002}. Dans la littérature, il peut être affiché en valeur absolue.
 
 \begin{figure}[!h]
 \begin{center}
@@ -918,7 +922,7 @@ L’angle formé par les feuillets (E2A) est calculé à l’aide du vecteur $e_
 
 \section{Conclusion}
 
-Dans ce chapitre d'introduction, nous avons vu que le myocarde est un tissu hétérogène mais structuré, constitué de cardiomyocytes agrégées sous la forme de chaînes (par abus de langage, les myofibres), ces chaînes formant des plans. L'orientation des myofibres est importante car la propagation du PA, nécessaire à l'excitabilité et à la contraction des cellules (permettant le mouvement de contraction du cœur), dépend de celle-ci. Un désordre trop important est l'une des causes des maladies du rythme cardiaque. Il existe différentes méthodes pour observer l'orientation de ces fibres, mais l'IRM de diffusion est un \textit{gold standard} en matière de recherche, c'est pourquoi nous l'avons utilisée dans cette thèse. Nous avons également voulu approfondir l'étude de l'anisotropie du myocarde en utilisant un modèle avancé de DTI. 
+Dans ce chapitre d'introduction, nous avons vu que le myocarde est un tissu hétérogène mais structuré, constitué de cardiomyocytes agrégées sous la forme de chaînes (par abus de langage, les myofibres), ces chaînes formant des plans. L'orientation des myofibres est importante car la propagation du PA, nécessaire à l'excitabilité et à la contraction des cellules (permettant le mouvement de contraction du cœur), dépend de celle-ci. Un désordre trop important est l'une des causes des maladies du rythme cardiaque. Il existe différentes méthodes pour observer l'orientation de ces fibres, mais l'IRM de diffusion est un \textit{gold standard} en matière de recherche, c'est pourquoi nous l'avons utilisée dans cette thèse. Nous avons également voulu approfondir l'étude de l'anisotropie du myocarde en utilisant un modèle avancé de DTI.
 
 
 
