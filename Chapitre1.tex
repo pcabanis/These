@@ -379,40 +379,42 @@ S peut être décrite par une mono-exponentielle avec G, D, $\delta$, $\Delta$ c
 S= S_0 \cdot e^{-\gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D}
 \end{equation}
 
-Par convention, on appelle valeur b le produit $\gamma^2G^2\delta^2 (\Delta -\frac{\delta}{3})$. Plus b est élevé alors $e^{-bD}$ tend vers 0 entrainant une baisse d’intensité (globale) S mais un plus grand signal pondéré en diffusion. Pour faire varier b, il est possible de faire varier G,$\delta$,$\Delta$. $\delta$ et $\Delta$ sont des temps donc les accroitre augmentera b mais aussi le temps total d’acquisition.  Accroitre G est la solution envisager dans la plupart des cas mais de fort gradient peuvent endommager l’instrumentation.
+Par convention, on appelle valeur b le produit $\gamma^2G^2\delta^2 (\Delta -\frac{\delta}{3})$. Si b est élevé alors $e^{-bD}$ tend vers 0 entrainant une baisse d’intensité (globale) S mais une pondération en diffusion plus importante. Pour faire varier b, il est possible de faire varier G, $\delta$, $\Delta$. $\delta$ et $\Delta$ sont des temps donc les accroitre augmentera b mais aussi le temps total d’acquisition. Accroitre G est la solution envisager dans la plupart des cas mais dépend des caractéristiques de l'imageur. De plus, de fort gradient peuvent endommager l’instrumentation.
 
 \subsubsection{Le coefficient apparent de diffusion (ADC)}
 
-Si nous repartons de la définition de S, le rapport $\frac{S}{S_0}$ est égale à $e^{-\gamma ^2 G^2 \delta ^2 \Delta ^2-\frac{\delta}{3})D}$. Avec le logarithme népérien, nous obtenons la relation suivante :
+Si nous repartons de la définition de S, le rapport $\frac{S}{S_0}$ est égale à $e^{-\gamma ^2 G^2 \delta ^2 (\Delta-\frac{\delta}{3})D}$. Avec le logarithme népérien, nous obtenons la relation suivante :
 \begin{equation}
 \nonumber
-\ln{\left(\frac{S}{S_0}\right)}=\ -\gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D
+\ln{\left(\frac{S}{S_0}\right)}=\ -\gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D = -b \cdot D
 \end{equation}
 Que nous pouvons transformer pour obtenir une équation affine (y = p – m.x) : 
 \begin{equation}
 \nonumber
-\ln{\left(S\right)}=\ln{\left(\frac{S}{S_0}\right)}=- \gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D
-\rightarrow\ \ln{\left(S\left(b\right)\right)=}\ln{\left(S_0\right)}-\ b.\ D\ 
+%\ln{\left(S\right)}=\ln{\left(\frac{S}{S_0}\right)}=- \gamma^2 \cdot G^2 \cdot\delta ^2 \cdot (\Delta-\frac{\delta}{3}) \cdot D
+%\rightarrow\ 
+\ln{\left(S\left(b\right)\right)=}\ln{\left(S_0\right)}-\ b.\ D\ 
 \end{equation}
 
-Avec y le logarithme népérien de S à une valeur de b fixé [a.u] , p le logarithme népérien de S [a.u]  avec b = 0 [$s/mm^2$] (un signal sans gradient de diffusion/dephasage-rephasage) et  m  = coefficent de diffusion D [$mm^2/s$] et x = valeur b [$s/mm^2$].
+Avec y le logarithme népérien de S à une valeur de b fixé [a.u] , p le logarithme népérien de S [a.u]  avec b = 0 [$s/mm^2$] (un signal sans gradient de diffusion/dephasage-rephasage) et  m  = coefficient de diffusion D [$mm^2/s$] et x = valeur b [$s/mm^2$].\\
 
 \begin{figure}[!htbp]
   \begin{center}
     \includegraphics[width=0.9\textwidth]{Chapitre1/adc.png}
      \end{center}
-    \caption{Relation entre l'intensité du gradient et l'intensité du signal. La pondération de la diffusion augmente avec l'intensité du gradient. Cela entraîne une perte de signal, et la pente, mais pas l'intensité absolue du signal, contient des informations sur la constante de diffusion. Une fois la constante de diffusion déterminée à partir de la pente de chaque pixel, il est possible d'obtenir une carte des constantes de diffusion, dans laquelle la luminosité est proportionnelle aux constantes de diffusion ; plus le pixel est lumineux, plus la constante de diffusion est élevée. Dans cet exemple, le pixel rose présente une perte de signal importante, ce qui suggère une diffusion rapide. Sur la carte des constantes de diffusion, cette région devient brillante. Le pixel bleu, en revanche, présente une perte de signal beaucoup plus faible et une pente peu prononcée. La constante de diffusion dans cette région est lente et devient plus sombre dans la carte des constantes de diffusion}
+    \caption{Relation entre l'intensité du gradient et l'intensité du signal. La pondération de la diffusion augmente avec l'intensité du gradient. Cela entraîne une perte de signal. La pente. et non l'intensité absolue du signal, contient des informations sur la constante de diffusion. Une fois la constante de diffusion déterminée à partir de la pente de chaque pixel, il est possible d'obtenir une carte des constantes de diffusion, dans laquelle la luminosité est proportionnelle aux constantes de diffusion ; plus le pixel est lumineux, plus la constante de diffusion est élevée. Dans cet exemple, le pixel rose présente une perte de signal importante, ce qui suggère une diffusion rapide. Sur la carte des constantes de diffusion, cette région devient brillante. Le pixel bleu, en revanche, présente une perte de signal beaucoup plus faible et une pente peu prononcée. La constante de diffusion dans cette région est lente et devient plus sombre dans la carte des constantes de diffusion}
   \label{fig:adc}
 \end{figure}
+
 Le coefficient de diffusion D est la propriété physique du tissu, il est indépendant de l’acquisition RMN. Pour le retrouver à partir d’une acquisition de diffusion, il est possible de faire plusieurs acquisitions avec différents b (Figure \ref{fig:adc}). Le coefficient de diffusion trouvé à l’aide la variation de b est appelé coefficient apparent de diffusion (ADC, \textit{apparent diffusion coefficient}). Dans les faits, il est possible de ne faire que deux acquisitions avec deux valeurs b différentes car la variation de diffusion est linéaire en fonction de b.
 \clearpage
  \subsection{Décrire la directionnalité d’un milieu à l’aide de la diffusion}
 
 \subsubsection{Le milieu influe sur la diffusion des molécules d’eau}
 
-Dans la parie précédente nous avons vu que les molécules d’eau avaient un déplacement aléatoire (browniens) dans toutes les directions : la diffusion. Cette affirmation est inexacte car la direction de ce mouvement n’est en effet pas dirigée par les molécules d’eau elles-mêmes mais par le milieu qui va contraindre leurs déplacements. 
+Dans la parie précédente nous avons vu que les molécules d’eau avaient un déplacement aléatoire (browniens) dans toutes les directions : la diffusion. Cette affirmation est inexacte car la direction de ce mouvement n’est en effet pas dirigée par les molécules d’eau elles-mêmes mais par le milieu qui va contraindre leurs déplacements. \\
 
-Une expérience connue consiste à déposer une goutte d’encre sur un papier et d’attendre qu’une tâche se forme. Si le maillage du papier est carré alors, la tâche sera ronde car l’encre diffuse de façon isotrope. Par contre si le maillage n’est plus carré mais rectangulaire dans la direction gauche-droite, alors la tâche sera anisotrope en forme d’ellipse avec comme direction principale(flèche bleue) de cette ellipse l’axe gauche-droite (Figure \ref{fig:grille_encre}). 
+Une expérience connue consiste à déposer une goutte d’encre sur un papier et d’attendre qu’une tâche se forme. Si le maillage du papier est carré alors, la tâche sera ronde car l’encre diffuse de façon isotrope. Par contre si le maillage n’est plus carré mais rectangulaire dans la direction gauche-droite, alors la tâche sera anisotrope en forme d’ellipse avec comme direction principale (flèche bleue) de cette ellipse l’axe gauche-droite (Figure \ref{fig:grille_encre}). \\
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -421,9 +423,8 @@ Une expérience connue consiste à déposer une goutte d’encre sur un papier e
     \caption{ Schéma représentant la diffusion d’une goutte d’encre sur un maillage isotrope (haut) et sur un maillage anisotrope (bas). Dans le cas du maillage anisotrope (ici plus de fibres ayant une direction gauche-droite que haut-bas).L’encre diffuse dans la direction ayant le plus de fibres (droite-gauche).}
   \label{fig:grille_encre}
 \end{figure}
-Dans le cas du flux, comme les molécules d’eau ont une orientation unidirectionnelle, leur mouvement peut être modélisé par un vecteur.  
-La diffusion isotrope a une forme circulaire, il n’y a donc pas d’orientation préférentielle de la diffusion. La norme d’un vecteur (le rayon du cercle) suffit à décrire la diffusion.
-La diffusion anisotrope est décrite par une ellipse, il faut donc deux longueurs, le grand axe (bleue) et petit axe (rouge) au minimum décrire la géométrie de l’ovale et un vecteur pour décrire l’orientation. 
+
+Dans le cas du flux, comme les molécules d’eau ont une orientation unidirectionnelle, leur mouvement peut être modélisé par un vecteur. La diffusion isotrope a une forme circulaire, il n’y a donc pas d’orientation préférentielle de la diffusion. La norme d’un vecteur (le rayon du cercle) suffit à décrire la diffusion. La diffusion anisotrope est décrite par une ellipse, il faut donc deux longueurs, le grand axe (bleue) et petit axe (rouge) au minimum décrire la géométrie de l’ovale et un vecteur pour décrire l’orientation. 
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -433,7 +434,7 @@ La diffusion anisotrope est décrite par une ellipse, il faut donc deux longueur
   \label{fig:ellipse}
 \end{figure}
 
-En trois dimensions, une ellipsoïde (ellipse en trois dimensions) nécessite six paramètres pour être définie. T trois longueurs sont nécessaires pour le grand, moyen et petit axe, perpendiculaires les uns par rapport aux autres. Ces longueurs sont appelées « valeurs propres » $\lambda_1,\lambda_2,\lambda_3$. Trois « vecteurs propres » $e_1$,$e_2$,$e_3$ sont nécessaires pour définir l’orientation. Parce qu’il faut six paramètres pour définir une ellipsoïde, six mesures de longueurs le long de six axes arbitraires sont nécessaires pour la déterminer.
+En trois dimensions, une ellipsoïde (ellipse en trois dimensions) nécessite six paramètres pour être définie. Trois longueurs sont nécessaires pour le grand, moyen et petit axe, perpendiculaires les uns par rapport aux autres. Ces longueurs sont appelées « valeurs propres » $\lambda_1, \lambda_2, \lambda_3$. Trois « vecteurs propres » $e_1$, $e_2$, $e_3$ sont nécessaires pour définir l’orientation. Parce qu’il faut six paramètres pour définir une ellipsoïde, six mesures de longueurs le long de six axes arbitraires sont nécessaires pour la déterminer.
 
 \subsubsection{L’imagerie pondérée en diffusion pour obtenir la direction d’un milieu}
 
