@@ -5,3 +5,18 @@ Ce template est fait pour être compilé avec des éditeurs modernes afin de bie
 Plus de détails sur ce qui est inclus ou non dans ce template sont fournis sur le site web. Un petit point d'attention pour la gestion des accents, il est important que votre éditeur ouvre les fichiers et les sauvegardent au format UTF-8 afin de s'assurer d'une bonne gestion des accents.
 
 Si vous avez un quelconque problème, n'hésitez pas à consulter l'aide sur le site web.
+
+VALERY 
+
+git add Chapitre1.tex
+git commit -m "bouge irm section"
+git checkout -b branch_VO
+git push origin branch_VO
+
+PIERRE
+
+git add Chapitre1.tex
+git commit -m "something"
+git checkout origin/main
+git push origin branch_PC
+
