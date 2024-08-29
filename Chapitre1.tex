@@ -654,7 +654,7 @@ La tomodensitométrie (TDM, communément appel scanner) est une technique d’im
 }
 
 
-\textcolor{red}{TODO le concept de rule based, jason , universal coordinate}
+\textcolor{red}{TODO le concept de rule based dans state of art, jason , universal coordinate}
 %
 
 %Pour avoir un contraste plus élevé dans les vaisseaux sanguins (coronaires par exemple), il est possible d’utiliser des agents de contraste radio-opaque (en blanc sur les images rayon X) à base d’iode (dit agents de contraste iodés). Avec un contraste et en acquérant plusieurs images à la suite, il est possible de d’obtenir le flux sanguin dans les vaisseaux. La résolution spatiale d’une image TDM est de 500 $\mu$m isotropique pour un temps d’acquisition de l’ordre de la minute.
@@ -712,24 +712,20 @@ En choisissant un TI annulant le signal du myocarde, le contraste entre le myoca
 
 \subsubsection{La diffusion cardiaque \textit{in vivo} 
 }
-Il est possible d’obtenir l’orientation des fibres musculaires grâce à la RMN en utilisant l’Imagerie Pondérée en Diffusion ou IRM de diffusion (Diffusion Weighted Imaging, DWI). Le DWI existe depuis les années 1980 \cite{LeBihan1986}, et fut utilisée chez des patients ayant eu un accident ischémique (arrêt de l’apport sanguin à un tissu/organe). De nos jours, l’importance de cette technique n’est plus à prouver, elle est utilisé en clinique tout aussi bien en neuroimageri que sur le foie, les reins et la prostate pour identifier des tumeurs. C’est grâce de nouvelles méthodes d’acquisition et d’accélération comme l’imagerie echo-planar (\textit{Echo Planar Imaging}, EPI) \cite{Mansfield1977} \cite{PoustchiAmin2001} que le DWI a pu devenir une réalité clinique. \\ %L’EPI est une technique qui permet d’acquérir l’ensemble d’une coupe en une seul écho mais qui induit des artéfacts sur l’image résultantes. \\%(Chapitre Introduction partie 3).
+Il est possible d’obtenir l’orientation des fibres musculaires grâce à la RMN en utilisant l’Imagerie Pondérée en Diffusion ou IRM de diffusion (Diffusion Weighted Imaging, DWI). Le DWI existe depuis les années 1980 \cite{LeBihan1986}, et fut utilisée chez des patients ayant eu un accident ischémique (arrêt de l’apport sanguin à un tissu/organe). De nos jours, l’importance de cette technique n’est plus à prouver, elle est utilisé en clinique tout aussi bien en neuroimagerie que sur le foie, les reins et la prostate pour identifier des tumeurs. C’est grâce de nouvelles méthodes d’acquisition et d’accélération comme l’imagerie echo-planar (\textit{Echo Planar Imaging}, EPI) \cite{Mansfield1977} \cite{PoustchiAmin2001} que le DWI a pu devenir une réalité clinique. \\ %L’EPI est une technique qui permet d’acquérir l’ensemble d’une coupe en une seul écho mais qui induit des artéfacts sur l’image résultantes. \\%(Chapitre Introduction partie 3).
 
 
-L’IRM de diffusion est un candidat idéal à l’étude de l’architecture du myocarde mais le mouvement rapide et potentiellement irrégulier (le battement cardiaque est certes périodique mais la fréquence varie en fonction de divers paramètres comme d’éventuelles pathologies ou le stress du patient dans le scanner) rendent complexe l’application de l’IRM de diffusion comme examen clinique de routine (actuellement la résolution de 2x2x8 mm3 avec un temps d’acquisition proche des 20 minutes). \textcolor{red}{TODO mettre des travaux de magalie viallon soit séqence EPI soit étude clinique et mettre une figure }\\
-
-
-
-%Le chapitre (chapitre introduction partie 3) est consacré à l’explication mathématiques et physiques permettant d’obtenir l’orientation des fibres.
+L’IRM de diffusion est un candidat idéal à l’étude de l’architecture du myocarde mais le mouvement rapide et potentiellement irrégulier (le battement cardiaque est certes périodique mais la fréquence varie en fonction de divers paramètres comme d’éventuelles pathologies ou le stress du patient dans le scanner) rendent complexe l’application de l’IRM de diffusion comme examen clinique de routine (actuellement la résolution de 2x2x8 mm3 avec un temps d’acquisition proche des 20 minutes). \textcolor{red}{TODO mettre des travaux de magalie viallon soit séqence EPI soit étude clinique et mettre une figure }. Le potentiel immense de l’IRM de diffusion cardiaque et le travail de nombreuses équipes à travers le monde ont permis d’obtenir des images pondérées de diffusion \textit{in vivo} du cœur en systole et en diastole (Figure \ref{fig:dti_inivo}) ouvrant la voie à une méthode non-invasive, en trois dimensions et sans agent de contraste pour l’étude des pathologies cardiaques.\\
 
 \begin{figure}[!htbp]
   \begin{center}
     \includegraphics[width=0.9\textwidth]{Chapitre1/dti-invivo.jpg}
      \end{center}
-    \caption{DTI sur volontaire sain et sur un patient (haut) avec hypertrophie cardiaque (bas) en systole et en diastole. Les metriques de diffusion (E2A, voir chapitre introduction Partie 3) cardiaque sont modifiées avec la pathologie}
+    \caption{DTI sur volontaire sain et sur un patient (haut) avec hypertrophie cardiaque (bas) en systole et en diastole. La métrique de diffusion (E2A) cardiaque est modifiée avec la pathologie}
   \label{fig:dti_inivo}
 \end{figure}
 
-Le potentiel immense de l’IRM de diffusion cardiaque et le travail de nombreuses équipes à travers le monde ont permis d’obtenir des images pondérées de diffusion \textit{in vivo} du cœur en systole et en diastole (Figure \ref{fig:dti_inivo}) ouvrant la voie à une méthode non-invasive, en trois dimensions et sans agent de contraste pour l’étude des pathologies cardiaques.
+
 
 
 \subsubsection{Décrire la microstructure cardiaque à l’aide de l'imagerie de diffusion}
@@ -744,9 +740,10 @@ Le potentiel immense de l’IRM de diffusion cardiaque et le travail de nombreus
 \frac{S}{S_0}=fe^{-b\left(D+D\ast\right)}+\left(1-f\right)e^{-bD}
 \end{equation}
 
-Avec f (sans dimension) la fraction de perfusion (le pourcentage du volume occupé par les capillaires). D* est appelé le coefficient de pseudo-perfusion reflétant le déphasage induit par les capillaires. Dans le cas d’acquisitions ex vivo, le tissu cardiaque n’est plus perfusé donc le modèle peut-être simplifié.
+Avec f (sans dimension) la fraction de perfusion (le pourcentage du volume occupé par les capillaires). D* est appelé le coefficient de pseudo-perfusion reflétant le déphasage induit par les capillaires. Dans le cas d’acquisitions ex vivo, le tissu cardiaque n’est plus perfusé donc le modèle peut-être simplifié. \\
 
-Les structures microscopiques (membranes cellulaires, matrice extra-cellulaire/espace interstitielle ...) restreignent la diffusion des molécules d’eau. L’orientation principales des cardiomyocytes sera donnée par le premier vecteur propre $e_1$, le deuxième $e_2$ donne l’orientation des feuillets (un plan) et le troisième $e_3$ est la normale du plan des feuillets (Figure \ref{fig:dti_heart_plan}).
+Les structures microscopiques (membranes cellulaires, matrice extra-cellulaire/espace interstitielle ...) restreignent la diffusion des molécules d’eau. L’orientation principales des cardiomyocytes sera donnée par le premier vecteur propre $e_1$, le deuxième $e_2$ donne l’orientation des feuillets (un plan) et le troisième $e_3$ est la normale du plan des feuillets (Figure \ref{fig:dti_heart_plan}). Les métriques comme la FA et l’ADC sont en moyenne égales à 0.30 et 1.5 x $10^{-3}Ò$ $mm^2/s$ respectivement. Si la perfusion, n’est pas compensée dans le calcul des métriques de diffusion, l’ADC peut-être surestimé voir supérieur à la limite théorique qu’est la diffusion de l’eau dans un milieu non contraignant (2.9 x $10^{-3}$ $mm^2/s$) \cite{Moulin2023}.
+\textcolor{red}{TODO attention perfusion difference de mouvement}
 
 \begin{figure}[!h]
 \begin{center}
@@ -756,19 +753,16 @@ Les structures microscopiques (membranes cellulaires, matrice extra-cellulaire/e
 \label{fig:dti_heart_plan}
 \end{figure}
 
-Les métriques comme la FA et l’ADC sont en moyenne égale à 0.30 et 1.5 x $10^{-3}Ò$ $mm^2/s$ respectivement. Si la perfusion, n’est pas compensée dans le calcul des métriques de diffusion, l’ADC peut-être surestimé voir supérieur à la limite théorique qu’est la diffusion de l’eau dans un milieu non contraignant (2.9 x $10^{-3}$ $mm^2/s$) \cite{Moulin2023}.
-\textcolor{red}{TODO attention perfusion difference de mouvement}
-
 \subsubsection{Les métriques dérivées des vecteurs propres du DT}
 
-Plusieurs métriques dérivées des vecteurs propres du DT sont propres à l'imagerie de la structure cardiaque et la symétrie des ventricules:
+Plusieurs métriques dérivées des vecteurs propres du DT sont propres à l'imagerie de la structure cardiaque et à la symétrie axiale des ventricules:
 
 \begin{bulletList}
 \item L’Angle Helix (HA) est une métrique dérivée de $e_1$ permettant d’obtenir une représentation scalaire de l’orientation des myocytes \cite{Ferreira2013}. Il est obtenu en projetant $e_1$ dans un plan tangentiel au myocarde (épicarde) puis en calculant l’angle sous-tendu avec le plan en petit axe. .
 
 \item L’angle formé par les feuillets (E2A) est calculé à l’aide du vecteur $e_3$. Il est l’angle sous-tendu entre la projection du vecteur $e_3$ dans le plan radial ayant pour origine le centre du VG et le plan tangentiel à l’épicarde\cite{Dou2002}. Dans la littérature, il peut être affiché en valeur absolue. L’orientation des feuillets s’étend dans la direction des cardiomyocytes avec une variation helicoïdale entre l’endocarde et l’épicarde et oblique par rapport au plan tangent de l’épicarde (Figure \ref{fig:model_fibre}).
 
-\item L’indice de désordre du myocarde (\textit{Myocardium Disarray Index} ,MDI) est un métrique aussi dérivée de e1 reflétant la désorganisation locale des cardiomyocytes \cite{Wu2004} \cite{GarciaCanadilla2019}. Le MDI quantifie pour chaque voxel l’uniformité de la direction principale des myocytes au voisinage de ce même voxel. Il varie entre 0 et 1 avec 1 signifiant aucune différence d’orientation des cardiomyocytes ($e_1$ équivalent pour tous les voxels) et 0 le contraire ($e_1$ tous différents au voisinage proche du voxel).
+\item L’indice de désordre du myocarde (MDI \textit{Myocardium Disarray Index}) est un métrique aussi dérivée de e1 reflétant la désorganisation locale des cardiomyocytes \cite{Wu2004} \cite{GarciaCanadilla2019}. Le MDI quantifie pour chaque voxel l’uniformité de la direction principale des myocytes au voisinage de ce même voxel. Il varie entre 0 et 1 avec 1 signifiant aucune différence d’orientation des cardiomyocytes ($e_1$ équivalent pour tous les voxels) et 0 le contraire ($e_1$ tous différents au voisinage proche du voxel).
 
 \end{bulletList}
 
@@ -812,25 +806,23 @@ Plusieurs métriques dérivées des vecteurs propres du DT sont propres à l'ima
 
 \subsubsection{Conclusion sur l’imagerie \textit{in vivo}}
 
-De nombreuses modalités d’imagerie permettent aux cardiologues et radiologue d’identifier les pathologies cardiaques de manière non-invasive et indolore. Il est même possible de remonter à l’orientation des chaînes de myocyte grâce à l’échographie ultrarapide et à l’IRM de diffusion. Cependant, le mouvement cardiaque, le temps d’acquisition et le mouvement du patient sont de véritables problèmes pour obtenir une image en haute résolution de l’orientation des cardiomyocytes.
-
-Pour mieux comprendre et décrire l’anatomie cardiaque, il est alors nécessaire de prélever le cœur et de l’étudier avec des techniques d’imagerie ( et potentiellement détruire le tissu) plus fines que celles employés pendant un examen cardiaque.
+L’échographie ultrarapide et à l’IRM de diffusion permettent de manière d'étudier de manière non-invasive et indolore l’orientation des chaînes de myocyte. Cependant, ces études sont limités au VG et peu résolue. En effet, les mouvements physiologiques, le temps d’acquisition sont de véritables problèmes pour cartographie la microstructure et l’orientation des cardiomyocytes à haute résolution sur coeur entier. Pour mieux comprendre et décrire l’anatomie cardiaque, il a été  nécessaire de prélever le cœur et de l’étudier avec des techniques d’imageries post-mortem dédiées.
 
 \subsection{L’imagerie \textit{ex vivo}}
 
-La partie imagerie \textit{in vivo} a été introduite avec le postulat qu’il est important d’identifier une pathologie cardiaque quand le patient est toujours vivant. Malheureusement, les méthodes \textit{in vivo} ne sont pas capable d’obtenir une image suffisamment résolue pour obtenir une image nette d’une cellule cardiaque ainsi que de son fonctionnement interne.
+%La partie imagerie \textit{in vivo} a été introduite avec le postulat qu’il est important d’identifier une pathologie cardiaque quand le patient est toujours vivant. Malheureusement, les méthodes \textit{in vivo} ne sont pas capable d’obtenir une image suffisamment résolue pour obtenir une image nette d’une cellule cardiaque ainsi que de son fonctionnement interne.
 
-Les premiers travaux d’étude de l’architecture cardiaque ont été réalisés sur des cœurs \textit{ex vivo} (de l’Égypte Antique à l’ère moderne en passant par la renaissance avec les dessins du cœurs trouvés dans les carnets de Léonard de Vinci). Cela a permis une meilleure compréhension de fonctionnement du cœur : du fonctionnement interne d’une cardiomyocyte (contraction suite à une excitation électrique) jusqu’à l’architecture laminaire du myocarde en passant par la découverte du réseau (fibres) de Purkinje et des cellules de Purkinje (par Jan Evangelista Purkinje au XIXème siècle).
-
- Malgré le caractère sans retour de l’imagerie \textit{ex vivo}, c’est grâce à elle que de nombreuses techniques d’imagerie (comme le LGE) ont pu être validées et être utiliser maintenant comme diagnostics des pathologies cardiaques. La suite de cette partie sera consacrée à présenter les différentes techniques d’imagerie \textit{ex vivo} cardiaque.
+Les premiers travaux d’étude de l’architecture cardiaque ont été réalisés sur des cœurs \textit{ex vivo} (de l’Égypte Antique à l’ère moderne en passant par la renaissance avec les dessins du cœurs trouvés dans les carnets de Léonard de Vinci). Cela a permis une meilleure compréhension de fonctionnement du cœur: du fonctionnement interne d’une cardiomyocyte (contraction suite à une excitation électrique) jusqu’à l’architecture laminaire du myocarde en passant par la découverte du réseau (fibres) de Purkinje et des cellules de Purkinje (par Jan Evangelista Purkinje au XIXème siècle). L’imagerie \textit{ex vivo} est aussi cruciale pour valider les techniques d’imagerie in vivo (comme le LGE) en vue d'une utilisation clinique pour diagnostiquer les pathologies cardiaques. La suite de cette partie sera consacrée à présenter les différentes techniques d’imagerie \textit{ex vivo} cardiaque.
 
 \subsubsection{L’Histologie}
 
-Le mot histologie vient du grec \textit{histos} (tissus) et \textit{logos} (discours, parole), c’est l’étude des tissus biologiques. La base de l’histologie est la dissection d’un cœur. Pour obtenir une imagerie haute résolution du myocarde au microscope, il est nécessaire de préparer le tissu avant l’imagerie. D’abord le cœur est découpé/divisé en plusieurs région d’intérêt. Le morceau de tissu sera ensuite déshydraté puis coupé dans le sens voulu (pour aider à la découpe, le bloc de tissu est immergé dans de la paraffine), chaque tranche a une épaisseur de quelques $\mu$m. Chaque coupe sera ensuite déposée sur une lame avant la coloration. Enfin la coupe de tissu colorée est scanner à la l’aide d’un microscope avec une résolution numérique de l’ordre du $\mu$m.
+Le mot histologie vient du grec \textit{histos} (tissus) et \textit{logos} (discours, parole), c’est l’étude des tissus biologiques. La base de l’histologie est la dissection d’un cœur. Pour obtenir une imagerie haute résolution du myocarde au microscope, il est nécessaire de préparer le tissu avant l’imagerie. D’abord le cœur est découpé/divisé en plusieurs région d’intérêt. Le morceau de tissu sera ensuite déshydraté puis coupé dans le sens voulu (pour aider à la découpe, le bloc de tissu est immergé dans de la paraffine), chaque tranche a une épaisseur de quelques $\mu$m. Chaque coupe sera ensuite déposée sur une lame avant la coloration. Enfin la coupe de tissu colorée est scannée à la l’aide d’un microscope avec une résolution numérique de l’ordre du $\mu$m. La coloration est une étape cruciale, elle permet de mettre en évidence des éléments du tissu (cellules adipeuses, myocytes, cellules de Purkinje …) et de les différencier entre eux. On distinguera deux colorations utilisées dans nos études:
 
-La coloration est une étape cruciale, elle permet de mettre en évidence des éléments du tissu (cellules adipeuses, myocytes, cellules de Purkinje …) et de les différencier entre eux.
+\begin{bulletList}
+  \item Le trichrome de Masson est très populaire car il permet de différencier les fibres de collagènes des fibres musculaires. Sur l’image, les fibres musculaires apparaitront en rouge, les cytoplasmes (substance intra-cellulaire) en rose , en bleu/vert le collagène et en noir les noyaux des cellules. Elle fait intervenir trois colorations successives : coloration des noyaux (hémalun de Mayer ou Hématoxyline de Harris), coloration du cytoplasme (mélange de fuchsine acide et de rouge ponceau) et ensuite une coloration du collagène par le vert lumière (ou bleu aniline)\cite{Golberg2024}. Grâce a ce contraste, il est possible de voir les chaînes de myocytes entourés par la MEC.
 
-Le trichrome de Masson est très populaire car il permet de différencier les fibres de collagènes des fibres musculaires. Sur l’image, les fibres musculaires apparaitront en rouge, les cytoplasmes (substance intra-cellulaire) en rose , en bleu/vert le collagène et en noir les noyaux des cellules. Elle fait intervenir trois colorations successives : coloration des noyaux (hémalun de Mayer ou Hématoxyline de Harris), coloration du cytoplasme (mélange de fuchsine acide et de rouge ponceau) et ensuite une coloration du collagène par le vert lumière (ou bleu aniline)\cite{Golberg2024}. Grâce a ce contraste, il est possible de voir les chaînes de myocytes entourés par la MEC.
+  \item Le rouge picro-sirius. Il est utilisée  pour visualiser et différencier les type de collagène présents dans les tissus biologique (si le microscope utilise une lumière polarisée\cite{Puchtler_1973}). Le collagène dépeint en rouge (avec de la microscopie classique) devient vert ou orange en fonction du type de collagène (avec de la lumière polarisée) tandis que le cytoplasme et les fibres musculaire sont jaunes.
+\end{bulletList}
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -840,17 +832,15 @@ Le trichrome de Masson est très populaire car il permet de différencier les fi
   \label{fig:histo}
 \end{figure}
 
-Le rouge picro-sirius est une autre coloration utilisée pour visualiser le collagène, et différencier différents type de collagène présents dans les tissus biologique si le microscope utilise une lumière polarisée\cite{Puchtler_1973} . Ici le collagène est rouge (avec de la microscopie classique, la couleur devient verte ou orange en fonction du type de collagène avec de la lumière polarisée) alors que le cytoplasme et les fibres musculaire sont jaunes.
+
 
 L’histologie est la méthode d’imagerie \textit{ex vivo} de référence (ou \textit{gold standard}) pour l’étude du tissu cardiaque et de l’orientation des myofbres grâce à sa capacité d’obtenir des images avec une grande résolution, de différencier les composantes du tissu cardiaque malgré le une destruction du cœur et une image en deux dimensions.
 
 \subsubsection{Fluorescence et clarity imaging}
 
-Le cœur possède une architecture en trois dimensions, donc réduire l’étude de la structure cardiaque à seulement deux n’est pas idéal pour étudier l’orthotropie du myocarde. La microscopie en fluorescence repose sur la formation d’une image par détection de la lumière émise par l’objet. L’objet est illuminé avec une source lumineuse avec une seule longueur d’onde (laser ou lumière blanche filtrée) puis les fluorophores émettent de la lumière, cette lumière sera filtrée pour ne garder que la longueur d’onde souhaité dans l’image résultante. Une image nette est obtenue en microscopie optique si l’image est située dans le foyer image de l’objectif, en déplacement la lentille, le foyer se déplace et il est possible d’obtenir un volume tridimensionnel.
+Le cœur possède une architecture en trois dimensions, donc réduire l’étude de la structure cardiaque à seulement deux n’est pas idéal pour étudier l’orthotropie du myocarde. La microscopie en fluorescence repose sur la formation d’une image par détection de la lumière émise par l’objet. L’objet est illuminé avec une source lumineuse avec une seule longueur d’onde (laser ou lumière blanche filtrée) puis les fluorophores émettent de la lumière, cette lumière sera filtrée pour ne garder que la longueur d’onde souhaité dans l’image résultante. Une image nette est obtenue en microscopie optique si l’image est située dans le foyer image de l’objectif, en déplacement la lentille, le foyer se déplace et il est possible d’obtenir un volume tridimensionnel. Cependant les tissus biologiques ne sont pas transparents, ce processus est limité en profondeur.
 
-Les tissus biologiques ne sont pas transparents, le processus d’imagerie par microscope est donc limité.
-
-CLARITY( Clear, Lipid-exchanged, Acrylamide-hybridized, Rigid, Imaging/immunostaining-compatible, Tissue hYdrogel) \cite{Du_2018} est une technique d'imagerie avancée développée pour rendre les tissus biologiques transparents, tout en préservant leur structure moléculaire proposé en 2013. Le processus CLARITY consiste à remplacer les lipides, qui contribuent à l'opacité des tissus, par un hydrogel transparent. Une fois les lipides extraits, le tissu devient optiquement transparent, permettant ainsi l'observation de détails fins à l'intérieur des tissus, tels que les connexions neuronales dans le cerveau, à l'aide de techniques d'imagerie en profondeur, comme la microscopie à fluorescence.
+Le CLARITY( Clear, Lipid-exchanged, Acrylamide-hybridized, Rigid, Imaging/immunostaining-compatible, Tissue hYdrogel) \cite{Du_2018} est une technique d'imagerie avancée développée pour rendre les tissus biologiques transparents, tout en préservant leur structure moléculaire proposé en 2013\footnote{Ce processus consiste à remplacer les lipides, qui contribuent à l'opacité des tissus, par un hydrogel transparent. Une fois les lipides extraits, le tissu devient optiquement transparent, permettant ainsi l'observation de détails fins à l'intérieur des tissus, tels que les connexions neuronales dans le cerveau, à l'aide de techniques d'imagerie en profondeur, comme la microscopie à fluorescence.}. Le CLARITY offre de multiple contrastes d’images (vaisseaux sanguins, collagène, cellules,) mais les contrastes dépendent de la bonne préparation de l’ échantillon. Grâce à des algorithmes de tenseur de structure, la structure orthotrope du myocarde peut être retrouvée. Néanmoins, la taille maximale de l’échantillon est contrainte par le microscope et ne sera pas utilisé dans nos études réalisées sur coeur entier de gros mammifères.  
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -860,13 +850,15 @@ CLARITY( Clear, Lipid-exchanged, Acrylamide-hybridized, Rigid, Imaging/immunosta
   \label{fig:clarity}
 \end{figure}
 
-Clarity Imaging permet d’obtenir différents contrastes d’images (vaisseaux sanguins, collagène, cellules) mais les contrastes dépendent de la bonne préparation de l’ échantillon. De plus, la taille de l’échantillon est réduite car il doit pouvoir être dans suffisamment petit pour être dans le microscope. Grâce à des algorithmes de tenseur de structure, la structure orthotrope du myocarde peut être retrouvé.
-\clearpage
 \subsubsection{Micro Computed Tomography et Syncrotron}
 
-La TDM peut aussi être utilisé sur des cœurs ex vivo. Les différents tissus ayant des radio-opacités (absorptions des rayon X) différentes, il est possible d’obtenir un volume avec un contraste en niveau de gris correspond à cette radio-opacité. Les scanners de micro computed tomography (MicroCT) possèdent un tunnel large (50 – 100 mm) leurs permettant d’imager de plus large échantillon comme des cœurs entiers de mammifères.
+La TDM peut aussi être utilisé sur des cœurs ex vivo. Les différents tissus ayant des radio-opacités (absorptions des rayon X) différentes, il est possible d’obtenir un volume avec un contraste en niveau de gris correspond à cette radio-opacité. On distinguera :
 
-Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (dose 10 milliards de fois supérieur à la dose hospitalière), c’est pourquoi, certains scientifiques utilisent le Synclotron pour avoir un volume anatomique (en niveau de gris) avec une résolution isotope proche 1 $\mu$m \cite{Planinc2021}, contre 20-40 $\mu$m pour le MicroCT classique.
+\begin{bulletList}
+  \item Le Syncrotron (accélérateur de particules), une vaste source de rayon X (dose 10 milliards de fois supérieur à la dose hospitalière), qui permet d'imager des coeurs entiers (en niveau de gris) avec une résolution isotrope proche 1 $\mu$m \cite{Planinc2021}. 
+
+  \item Les scanners de micro computed tomography (MicroCT ou microTDM) possèdent un tunnel large (50 – 100 mm) leurs permettant d’imager de plus large échantillon comme des cœurs entiers de mammifères à une résolution spatiale de 20-40 $\mu$m. Ce dernier sera utilisé de la cadre de ma thèse. 
+\end{bulletList}
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -876,14 +868,11 @@ Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (do
   \label{fig:uCT}
 \end{figure}
 
-Les tissus mous (composé en majorité d’eau) ont un faible poids moléculaire en comparaison avec les os. Les tissus mous vont alors provoquer une faible atténuation des rayons X et et un faible contraste au MicroCT. Pour résoudre ce problème, une nouvelle méthode de préparation des échantillons a été développer dans notre laboratoire. Les cœurs sont déshydraté avec un lavage à l’éthanol puis perfusé avec de l’éthanol et de l’ hexaméthyldisilazane (HMDS) et ensuite juste avec de l’HMDS, pour finir un séchage lent à l’air libre pendant plusieurs jours \cite{Pallares_Lupon_2022}.
+Les tissus mous (composé en majorité d’eau) ont un faible poids moléculaire en comparaison avec les os. Les tissus mous vont alors provoquer une faible atténuation des rayons X et et un faible contraste au MicroCT. Pour résoudre ce problème, une nouvelle méthode de préparation des échantillons a été développer dans notre laboratoire. Les cœurs sont déshydraté avec un lavage à l’éthanol puis perfusé avec de l’éthanol et de l’ hexaméthyldisilazane (HMDS) et ensuite juste avec de l’HMDS, pour finir un séchage lent à l’air libre pendant plusieurs jours \cite{Pallares_Lupon_2022}. Grâce au séchage, la structure laminaire du myocarde est visible car les plans du myocarde vont s’écarter légèrement. Les algorithmes de tenseur de structure peuvent aussi être appliqué sur les volumes pour remonter à la structure orthotrope du cœur.
 
-Grâce au séchage, la structure laminaire du myocarde est visible car les plans du myocarde vont s’écarter légèrement. Comme pour le \textit{clarity imaging}, algorithmes de tenseur de structure peuvent être appliqué sur les volumes pour obtenir la structure laminaire du cœur.
+\subsubsection{L’Imagerie en Tenseur de structure}
 
-	\subsubsection{L’Imagerie en Tenseur de structure}
-
-Les techniques d’imagerie présenté jusqu’ici sont permettent de voir la structure du myocarde, et de différencier les différentes composantes du myocarde (myocytes, MEC, capillaires…). L’orientation des chaînes de myocyte n’est pas une information directement disponible à partir de ces volumes. Pour obtenir l’orientation des myofibres, il est utilisé un objet mathématique appelé tenseur. Plus de détails sur l’obtention de l’orientation d’un vecteur à partir d’un tenseur est détaillé Partie 3. Pour obtenir un tenseur dit de structure (ST) d’une image I, structure pour éviter de le confondre avec un tenseur de diffusion, les gradients $\Delta$ dans les directions x,y et z sont calculés puis le tenseur est défini comme suit :
-
+Les techniques d’imagerie présenté jusqu’ici permettent de voir la structure du myocarde, et de différencier les différentes composantes du myocarde (myocytes, MEC, capillaires…). L’orientation des chaînes de myocyte n’est pas une information directement disponible à partir de ces volumes. Pour obtenir l’orientation des myofibres, il est utilisé un objet mathématique appelé tenseur. Plus de détails sur l’obtention de l’orientation d’un vecteur à partir d’un tenseur est détaillé Partie 3. Pour obtenir un tenseur dit de structure (ST) d’une image I, structure pour éviter de le confondre avec un tenseur de diffusion, les gradients $\Delta$ dans les directions x,y et z sont calculés puis le tenseur est défini comme suit :
 
 \begin{equation}
 \nonumber
@@ -895,16 +884,31 @@ ST =
 \end{bmatrix}
 \end{equation}
 
+\textcolor{red}{ajouter le lien avec la structure laminaire et dire quel vecteur définisse quoi }
+
 \subsubsection{L’IRM ex vivo à haut champ magnétique}
+%, et respecte des normes d’exposition aux ondes électromagnétiques
+% Le champ magnétique est généré par un aimant supraconducteur (résistance électrique très faible) qui devient supraconducteur à très faible température (< 269°) en étant plongé dans un bain d’hélium liquide.
+% Les résolutions en IRM à haut champ sont variables, comme dit précédemment car elles dépendent des gradients mais pour d.
+%en fonction du contraste souhaité et du temps d’acquisition disponible (une plus grande résolution implique plus de temps d’acquisition) u
+% Il permet néanmoins un large panel de contraste sans détruite l’échantillon.
+Le champ magnétique utilisé en clinique est dit champ moyen (entre 0.55 T et 3 T). L’intensité du signal RMN est dépendante de la valeur locale d’aimantation. En augmentant en champ magnétique, le rapport signal sur bruit (signal to noise ratio, SNR) augmente et couplé à des gradients avec de plus grandes amplitudes, on peut alors augmenter la résolution spatiale.  L'augmentation du champ magnétique raccourcit généralement les temps de relaxation T1 et T2 car elle intensifie les interactions spin-réseau pour T1 et les inhomogénéités de champ pour T2. L’IRM pondérée en diffusion. L’IRM ex vivo à haut champ magnétique a de nombreux avantages mais il nécessite une instrumentation adaptée et plus couteuse.  Bien que principalment utilisé sur des modèles murins, il est possible d’obtenir une résolution spatiale allant de 100 $\mu m$ ç 800 $\mu m$ isotropique sur cœurs entiers de gros mammifères .\\
 
-Le champ magnétique utilisé en clinique est dit champ moyen (entre 0.55 T et 3 T), il respecte des normes d’exposition aux ondes électromagnétiques. L’intensité du signal RMN est dépendante de la valeur locale d’aimantation. En augmentant en champ magnétique, le rapport signal sur bruit (signal to noise ratio, SNR) augmente et couplé à des gradients avec de plus grandes amplitudes, la résolution spatiale devient plus fine. Le champ magnétique est généré par un aimant supraconducteur (résistance électrique très faible) qui devient supraconducteur à très faible température (< 269°) en étant plongé dans un bain d’hélium liquide. L'augmentation du champ magnétique raccourcit généralement les temps de relaxation T1 et T2 car elle intensifie les interactions spin-réseau pour T1et les inhomogénéités de champ pour T2, conduisant à une relaxation plus rapide.  Réduire les T1 et T2 ne semble pas être intéressant à première vue mais le gain de SNR permet d’obtenir une bonne pondération T1 ou T2 (petite digression, à contrario, baisser en champ magnétique rallonge les temps T1 et T2, permettent aussi un bon contraste en pondération T1 ou T2, certains constructeurs de scanner IRM se base sur ce postulat pour proposer une nouvelle gamme de scanner dit bas champ (0.55 T)).
-L’IRM pondérée en diffusion profite beaucoup de ce gain en SNR permettant d’augmenter la valeur b sans dégrader l’intensité de l’écho RMN, révélant une structure plus encore plus précise qu’en imagerie de diffusion \textit{in vivo}.
+Mes travaux de thèse sont basés sur l'imagerie IRM à haut champ magnétique et s'appuie principalement sur l'imagerie pondérée en diffusion présentée précedemment. Cette dernière profite beaucoup de ce gain en SNR permettant d’augmenter la valeur b sans dégrader l’intensité de l’écho RMN. J'ai par ailleurs utilisé deux autres contrastes mise en place par Dr. Julie Magat à l'ihu liryc: l'imagerie de la graisse et l'imagerie du collagène qui sont présentés brièvement. \\ 
 
-Les noyaux atomiques précessent à une fréquence fixée par le champ magnétique, la fréquence de Larmor donnée par l’équation de Larmor : $\omega_0=\gamma \cdot B \cdot (1-\sigma)$ avec $\sigma$ le blindage chimique (les électrons génèrent un champ magnétique locale, créant un blindage au champ de l’aimant supraconducteur). Chaque molécule possède un nombre différent d’atomes d’hydrogène, chaque fréquence de Larmor est associée à une molécule. En augmentant le champ magnétique, l’écart entre les fréquences de Larmor de deux molécules différentes augmente.  La spectroscopie RMN est la capacité de différencier plusieurs molécules sur un spectre RMN.
+%Réduire les T1 et T2 ne semble pas être intéressant à première vue mais le gain de SNR permet d’obtenir une bonne pondération T1 ou T2 (petite digression, à contrario, baisser en champ magnétique rallonge les temps T1 et T2, permettent aussi un bon contraste en pondération T1 ou T2, certains constructeurs de scanner IRM se base sur ce postulat pour proposer une nouvelle gamme de scanner dit bas champ (0.55 T)).
+ 
+%, révélant une structure plus encore plus précise qu’en imagerie de diffusion \textit{in vivo}.
 
-La graisse possède un environnement magnétique différents de la molécule d’eau (chaine carbonée), par approximation, la graisse precesse a une fréquence différente de celle de la molécule d’eau. Le déplacement chimique est la différence relative de fréquence entre une molécule et une molécule de référence (l’eau, monoxyde de dihydrogène, H20). A 1.5T, le déplacement chimique entre l’eau la graisse est de 220 Hz alors qu’9.4 T il est de 398 MHz (déplacement de 3.5 ppm). Grâce à cette plus grande différence, le contraste de la graisse sera largement atténué par rapport au signal du tissu (constitue d’eau). La méthode IDEAL \cite{Haliot2021} utilise ce postulat pour acquérir plusieurs échos et séparer les signaux de la graisse et de l’eau. Comme pour la diffusion, l’imagerie de la graisse profite largement de la hausse du champ magnétique.
+%Les noyaux atomiques précessent à une fréquence fixée par le champ magnétique, la fréquence de Larmor donnée par l’équation de Larmor : $\omega_0=\gamma \cdot B \cdot (1-\sigma)$ avec $\sigma$ le blindage chimique (les électrons génèrent un champ magnétique locale, créant un blindage au champ de l’aimant supraconducteur). Chaque molécule possède un nombre différent d’atomes d’hydrogène, chaque fréquence de Larmor est associée à une molécule. La spectroscopie RMN est la capacité de différencier plusieurs molécules sur un spectre RMN. 
 
-L’étude du collagène est une thématique centrale dans l’étude de la structure cardiaque. Plusieurs éléments comme la fibrose ou les fibres de Purkinje en sont massivement constitués (Paragraphe myocarde). Comme pour les autres modalités d’imagerie, l’IRM permet de distinguer le collagène des autres composantes du myocarde. Une technique populaire en neurologie pour distinguer les gaines de myélines (isolant les neurones) est le transfert d’aimantation ou magnétisation (MT). Le principe est basé sur l'application d'une impulsion de saturation à une population de spins, généralement des protons liés à des macromolécules comme le collagène. Cette saturation est ensuite transférée à l'eau libre par échange magnétique, ce qui entraîne une diminution de l'intensité du signal de l'eau observable en RMN. Les résultats du MR sont souvent représentés sous la forme d’un ratio (MTR) entre un volume avec le module de préparation du MT  ($S_{MT}$) et un volume sans ($S_0$).
+\begin{bulletList}
+  \item Imagerie de la graisse.  La graisse possède un environnement magnétique différents de la molécule d’eau (chaine carbonée), par approximation, la graisse precesse à une fréquence différente de celle de la molécule d’eau. Le déplacement chimique est la différence relative de fréquence entre une molécule et une molécule de référence (l’eau, monoxyde de dihydrogène, H20). En augmentant le champ magnétique, l’écart entre les fréquences de Larmor de deux molécules différentes augmente. A 1.5T, le déplacement chimique entre l’eau la graisse est de 220 Hz alors qu’9.4 T il est de 398 MHz (déplacement de 3.5 ppm). Grâce à cette plus grande différence, le contraste de la graisse sera largement atténué par rapport au signal du tissu (constitue d’eau). La méthode IDEAL \cite{Haliot2021} utilise ce postulat pour acquérir plusieurs échos et séparer les signaux de la graisse et de l’eau. Comme pour la diffusion, l’imagerie de la graisse profite largement de la hausse du champ magnétique.
+
+  \item Imagerie du collagen. L’étude du collagène est une thématique centrale dans l’étude de la structure cardiaque. Plusieurs éléments comme la fibrose ou les fibres de Purkinje en sont massivement constitués (Paragraphe myocarde). Comme pour les autres modalités d’imagerie, l’IRM permet de distinguer le collagène des autres composantes du myocarde. Une technique populaire en neurologie pour distinguer les gaines de myélines (isolant les neurones) est le transfert d’aimantation ou magnétisation (MT). Le principe est basé sur l'application d'une impulsion de saturation à une population de spins, généralement des protons liés à des macromolécules comme le collagène. Cette saturation est ensuite transférée à l'eau libre par échange magnétique, ce qui entraîne une diminution de l'intensité du signal de l'eau observable en RMN. Les résultats du MR sont souvent représentés sous la forme d’un ratio (MTR) entre un volume avec le module de préparation du MT  ($S_{MT}$) et un volume sans ($S_0$).
+
+\end{bulletList}
+
 \begin{equation}
 \nonumber
 MTR=\ \frac{S_0-\ S_{MT}}{S_0}
@@ -926,7 +930,7 @@ MTR=\ \frac{S_{MT}}{S_0}
   \label{fig:IRM_exvivo_MT}
 \end{figure}
 
-L’IRM ex vivo à haut champ magnétique a de nombreux avantages mais il nécessite une instrumentation adaptée et plus couteuse. Il permet néanmoins un large panel de contraste sans détruite l’échantillon. Les résolutions en IRM à haut champ sont variables, comme dit précédemment car elles dépendent des gradients mais pour des cœurs entiers de gros mammifères. Il est possible d’obtenir en fonction du contraste souhaité et du temps d’acquisition disponible (une plus grande résolution implique plus de temps d’acquisition) une résolution allant de 100 $\mu m$ a 800 $\mu m$ isotropique.
+
 %Pour montrer l'environnement bulletList
 
 \subsection{state of art of cardiac structure analysis}
@@ -947,16 +951,24 @@ cf Novel atlas of fiber directions built from ex-vivo diffusion tensor images of
 
 \subsubsection{Conclusion}
 
+
+\textcolor{red}{TODO text très bof , a mon avis ce paragraphe est à réecrire enn suivant le state of art et les limitations}
 Le cœur est un organe en mouvement permanent, et l’architecture laminaire change en fonction de la diastole et de la systole. Établir une loi sur l’orientation des myocytes sur un cœur ex vivo quelques soit la modalité utilisée n’est pas chose aisé. Certaines équipes\cite{NiellesVallespin2019} \cite{STREETER1969} arrêtent un cœur en diastole puis un autre en systole et, après imagerie, en déduise l’orientation dans les deux cas. Dans la majorité des cas, les cœurs sont arrêtés dans une phase systolique.
 
-En conclusion, l’IRM de diffusion est un outil idéal pour étude l’orthotropie du cœur de grand mammifères (humain, brebis ou cochon) c’est pourquoi il est une méthode d’imagerie incontournable dans ce domaine. La partie Trois de ce chapitre d’introduction expliquera le foncionnement de l’IRM de diffusion et de ces métriques associées.
+En conclusion, l’IRM de diffusion est un outil idéal pour étude l’orthotropie du cœur de grand mammifères (humain, brebis ou cochon) c’est pourquoi il est une méthode d’imagerie incontournable dans ce domaine. 
+
+%La partie Trois de ce chapitre d’introduction expliquera le foncionnement de l’IRM de diffusion et de ces métriques associées.
 
 
 
 
 \section{Conclusion}
 
-Dans ce chapitre d'introduction, nous avons vu que le myocarde est un tissu hétérogène mais structuré, constitué de cardiomyocytes agrégées sous la forme de chaînes (par abus de langage, les myofibres), ces chaînes formant des plans. L'orientation des myofibres est importante car la propagation du PA, nécessaire à l'excitabilité et à la contraction des cellules (permettant le mouvement de contraction du cœur), dépend de celle-ci. Un désordre trop important est l'une des causes des maladies du rythme cardiaque. Il existe différentes méthodes pour observer l'orientation de ces fibres, mais l'IRM de diffusion est un \textit{gold standard} en matière de recherche, c'est pourquoi nous l'avons utilisée dans cette thèse. Nous avons également voulu approfondir l'étude de l'anisotropie du myocarde en utilisant un modèle avancé de DTI.
+\textcolor{red}{TODO  mon avis ce paragraphe est aussi à réecrire enn suivant le state of art et les limitations}
+
+Dans ce chapitre d'introduction, nous avons vu que le myocarde est un tissu hétérogène mais structuré, constitué de cardiomyocytes agrégées sous la forme de chaînes (par abus de langage, les myofibres), ces chaînes formant des plans. L'orientation des myofibres est importante car la propagation du potentiel d'action, nécessaire à l'excitabilité et à la contraction des cellules (permettant le mouvement de contraction du cœur), dépend de celle-ci. Les atteintes structurels dy myocarde sont l'une des causes des maladies du rythme cardiaque. 
+
+%Il existe différentes méthodes pour observer l'orientation de ces fibres, mais l'IRM de diffusion est un \textit{gold standard} en matière de recherche, c'est pourquoi nous l'avons utilisée dans cette thèse. Nous avons également voulu approfondir l'étude de l'anisotropie du myocarde en utilisant un modèle avancé de DTI.
 
 
 
