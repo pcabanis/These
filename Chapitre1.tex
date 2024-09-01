@@ -893,7 +893,7 @@ Clarity Imaging permet d’obtenir différents contrastes d’images (vaisseaux 
 \subsubsection{Micro Computed Tomography et Syncrotron}
 
 La TDM peut aussi être utilisé sur des cœurs ex vivo. Les différents tissus ayant des radio-opacités (absorptions des rayon X) différentes, il est possible d’obtenir un volume avec un contraste en niveau de gris correspond à cette radio-opacité. Les scanners de micro computed tomography (MicroCT) possèdent un tunnel large (50 – 100 mm) leurs permettant d’imager de plus large échantillon comme des cœurs entiers de mammifères.
-
+\\
 Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (dose 10 milliards de fois supérieur à la dose hospitalière), c’est pourquoi, certains scientifiques utilisent le Synclotron pour avoir un volume anatomique (en niveau de gris) avec une résolution isotope proche 1 $\mu$m \cite{Planinc2021}, contre 20-40 $\mu$m pour le MicroCT classique.
 
 \begin{figure}[!htbp]
@@ -905,7 +905,7 @@ Le Syncrotron (accélérateur de particules) est une vaste source de rayon X (do
 \end{figure}
 
 Les tissus mous (composé en majorité d’eau) ont un faible poids moléculaire en comparaison avec les os. Les tissus mous vont alors provoquer une faible atténuation des rayons X et et un faible contraste au MicroCT. Pour résoudre ce problème, une nouvelle méthode de préparation des échantillons a été développer dans notre laboratoire. Les cœurs sont déshydraté avec un lavage à l’éthanol puis perfusé avec de l’éthanol et de l’ hexaméthyldisilazane (HMDS) et ensuite juste avec de l’HMDS, pour finir un séchage lent à l’air libre pendant plusieurs jours \cite{Pallares_Lupon_2022}.
-
+\\
 Grâce au séchage, la structure laminaire du myocarde est visible car les plans du myocarde vont s’écarter légèrement. Comme pour le \textit{clarity imaging}, algorithmes de tenseur de structure peuvent être appliqué sur les volumes pour obtenir la structure laminaire du cœur.
 
 	\subsubsection{L’Imagerie en Tenseur de structure}
@@ -922,6 +922,8 @@ ST =
 \Delta I_z \cdot \Delta I_x & \Delta I_z \cdot \Delta I_y & \Delta I_z \cdot \Delta I_z\\
 \end{bmatrix}
 \end{equation}
+
+Un tenseur de structure est une ellipsoïde définie comme celle de du tenseur de diffusion. Elle est définie selon trois angles, trois valeurs propres et trois vecteurs. Cependant, il existe une subtilité entre le tenseur de structure et le tenseur de diffusion. Pour le tenseur de diffusion $e_1$ correspond à l'orientation des fibres et $e_3$ est l'orientation normale aux feuillets car $e_1$ est lié à la plus grande valeur propre $\lambda_1$. Dans le cas du tenseur de structure, la plus grande valeur propre est $\lambda_3$ donc le vecteur propre qui décrit l'orientation des fibres est $e_3$.
 
 \subsubsection{L’IRM ex vivo à haut champ magnétique}
 
