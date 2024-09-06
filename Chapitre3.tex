@@ -1,0 +1,214 @@
+%!TEX root = Manuscrit.tex
+\chapter{Caractérisation de la discontinuité septale dans les cœurs humains ex-vivo à l'aide de l'imagerie du tenseur de diffusion : le déterminisme structurel potentiel joué par l'orientation des fibres dans le phénotype clinique des patients atteints de laminopathie}
+
+\label{chap:LMNA}
+\minitoc
+
+\section{Préface}
+
+Ce chapitre est consacré à l’étude du septum intra ventriculaire (IVS) avec une comparaison \textit{in vivo} versus \textit{ex vivo} chez des patients ayant une mutation du gène LMNA. 
+\\
+Ces travaux de thèse font l’objet d’une publication scientifique en cours de préparation.
+\\
+L’objet de ce chapitre est de présenter le contexte du projet et les objectifs. Les travaux méthodologiques et les résultats sur lesquels j’ai travaillé vont être présentés. J’invite néanmoins le lecteur à se reporter à l’article pour avoir une vision plus complète des résultats et de discussion associée. 
+
+\section{Introduction}
+
+Les cardiomyopathies dilatées (CMD) sont une cause majeure d’arythmies ventriculaires voire de mort subite. La CMD se caractérise par une dilatation des cavités cardiaques et un amincissement des parois ventriculaires. L’une des causes de CMD est la mutation du gène LMNA (5 à 10 \%) sur le lamine type A qui entoure le noyau de la cellule cardiaque. Cette mutation entraîne une réduction de l’expression du lamine type A et C \cite{AlSaaidi2013}, dégradant le \textit{nucleonskeleton} (enveloppe du noyau du cardiomyocyte) entrainant in fine la mort cellulaire et son remplacement par de la MEC. Cette pathologie est appelée \textit{laminopathie}. 
+\\
+L’atteinte cardiaque et les phénotypes cliniques induits par la laminopathie sont bien décrits dans la littérature. On trouve des atteintes rythmiques (tachycardie ventriculaire, bloc de branche jusqu’à la mort subite, \cite{durandviel:dumas-01219976}) ou des atteintes structurelles (dilation du VG et présence de fibrose). En effet, de nombreuses études cliniques incluant des examens IRM cardiaques (CMR) par réhaussement tardif au gadolinium ont été réalisés sur des patients ayant la mutation du gène LMNA. Une zone fibrotique est composée en grande partie de collagène \cite{Caravan2006}, le T1 de la zone fibrotique sera réduit, permettant d’obtenir un hypersignal sur les images IRM \cite{Caravan2006}. On observe ainsi une réhaussement du signal dans la partie basale avec une cicatrice mid-septale (flèche noire) visible en petite axe (Figure 1 adaptée de \cite{Holmstrm2011}). L’étude d’Holmström a montré que la fibrose est présente dans la majorité des patients LMNA (N=15/17, 88 \%), et qu’elle est positionnée dans les zones antéroseptale et inféroseptale du myocarde (33/47 segments, 70 \%). \footnote{Le gadolinium est un agent de contraste extra-cellulaire, c’est-à-dire qu’il se fixe dans la matrice extra-cellulaire }
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/figure-1-CMR.png}
+  \end{center}
+  \caption{Réhaussement tardif chez un homme de 32 ans atteint de laminoapthie. Adaptée de \cite{Holmstrm2011}. Flèche noir : réhaussement tardif dans l’IVS}
+  \label{fig:gado_LMNA}
+\end{figure}
+
+Bien que les phénotypes cliniques des patients LMNA soient connues, la physiopathologie de la maladie (le lien entre les mécanismes cellulaires et les observations macroscopiques) reste relativement inconnue \cite{Crasto2020}. 
+\\
+L’hypertrophie (élargissement des cardiomyocytes) représente un mécanisme compensatoire visant à contrecarrer la perte des myocytes et la diminution de la capacité contractile du muscle cardiaque induit par une CMD. L’hypertrophie augmente le stress sur les cellules individuelles entrainant une perte de myocytes ce qui augmente davantage le stress mécanique et conductif sur les cellules restantes (adaptée de \cite{Mounkes2005}). La contrainte mécanique appliquée à une cellule va entrainer une réaction entre la cellule, la matrice extra-cellulaire et les cellules alentours \cite{Discher2005}. Des études précliniques ont montré que la lamine A est responsable de la rigidité de la MEC \cite{Swift2013}. 
+\\
+Concernant l’organisation des myocytes dans l’IVS, il existe un consensus dans la littérature disant que la règle de l’angle hélix décrite dans le chapitre introductif (Chapitre \ref{chap:intro}) est valable aussi dans tout le VG  \cite{MacIver2017_end_I} \cite{MacIver2017_end_II}. Quelques équipes \cite{Kocica2006} suggèrent une organisation complexe et globale du myocarde appelé bande myocardique théorisé par Torrent-Guasp dès le milieu du 20ème siècle. Selon le modèle de Torrent-Guasp, le cœur est constitué d’une bande unique de muscle cardiaque qui s’enroule de façon hélicoïdale. Il y aurait donc plusieurs populations d’orientation de fibres dans les ventricules, entrainant des discontinuités dans le VG. En voulant démontrer que la théorie de la bande myocardique est fausse, MacIver a évalué la variation d’HA entre l’épicarde et l’endocarde dans le VG sur cœur de cochon ex vivo avec le DTI, et n’a trouvé aucun changement abrupt d’orientation des cardiomyocytes (Figure \ref{fig:consensus}). 
+\\
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/figure_consensus_vs_dual_layerv2.png}
+  \end{center}
+  \caption{consensus versus double distribution d'orientation des cardiomyocytes dans l'IVS. A gauche, courbe hypothétique de la variation transmurale d’HA dans le cas où de la théorie de la bande myocardique et la variation d’HA obtenue à l’aide de l’imagerie en tenseur de diffusion, adaptée de MacIver \cite{MacIver2017_end_I} \cite{MacIver2017_end_II}. Droite, $e_{1,DTI}$ chez différentes espèces d’animaux (A) \cite{RodrguezPadilla2022}. Carte d’activation des temps d’activation locaux simulée avec plusieurs scénarios de profondeur et d’orientation de myofibres (B) , adaptée de \cite{RodrguezPadilla2022}. Variation d’orientation des myofibres dans l’IVS de cochon (C) et l’impact de cette-ci sur la propagations des signaux électrophysiologiques, données cartographies optiques (D-haut) et simulations (D-bas), adaptée de \cite{Vetter2005}. }
+  \label{fig:consensus}
+\end{figure}
+
+D’autres études tendent à montrer que ce modèle est trop approximatif et qu’il existe une discontinuité dans l’orientation des myocytes sur certaines espèces de mammifères \cite{Doste2019} \cite{Teh2016}. Une étude d’électrophysiologie \cite{RodrguezPadilla2022} sur cœurs ovins faite par notre équipe a démontré qu’il était possible d’obtenir des simulations d’électrophysiologie proche de données expérimentales \cite{Vetter2005} avec une double distribution d’orientation de cardiomyocytes (Figure 2). A travers cette étude, notre équipe a mis en évidence sur plusieurs espèces de grands mammifères la présence d’une double populations d’orientation des cardiomyocytes dans l’IVS (Figure \ref{fig:consensus}) en accord avec de précédant résultats sur le petit animal (rat) \cite{Teh2016}. Des différences majeures sont visibles entre les espèces, sur le chien , la brebis et le cochon, une couche de myocytes avec un orientation base-apex (bleu) s’étend de la base à l’apex alors que sur l’homme (N=1) la couche s’arrête au niveau basal à la trabeculation septo-marginale (SMT).  Néanmoins, l’étude n’est effectué que sur un échantillon humain (N=1) et ne permet de généraliser les observations et de statuer sur la présence ou non d’une double population d’orientation des fibres.
+\\
+\section{Objectifs}
+
+L’étude présentée ci-dessous faite suite aux travaux de l’équipe \cite{RodrguezPadilla2022} et vise à corréler la position du changement d’orientation des myofibres dans l’IVS sur la position de la cicatrice septal des patients LMNA. Plusieurs sous objectifs sont nécessaires :
+
+\begin{bulletList}
+ \item Confirmer le changement d’orientation des myofibres dans l’IVS chez l’homme à l’aide de la base de données Cadence et Armonica. 
+ \item Extraire la position du changement d’orientation des cardiomyocytes dans l’IVS sur la base de données \textit{ex vivo} à l’aide du DTI et d’outils mathématiques (régression non linéaire)
+ \item Mesurer la position de la cicatrice \textit{in vivo} sur une cohorte de patients LMNA ayant eu un CMR.
+ \item Associer l’étude \textit{ex vivo}  sur d’un cœur atteint de laminopathie avec les CMR réalisés avant à la transplantation. 
+ \item Valider la position de la fibrose et de l’orientation des cardiomyocytes avec une méthode d’imagerie \textit{gold standard}.
+\end{bulletList}
+
+
+
+Pour cela, une comparaison entre l’imagerie à haute résolution par IRM de diffusion entre des cœurs humains ex vivo ( N = 12) et une cohorte de (N = 40) patients ayant eu une examen IRM clinique avec une imagerie au réhaussement tardif au gadolinium. Pour la partie \textit{ex vivo}, à partir des données de diffusion, un tenseur est calculé puis les vecteurs sont extraits pour obtenir l’orientation moyenne des cardiomyocytes. Des métriques dérivées du premier vecteur propre ont permis d’obtenir la position moyenne du changement d’orientation dans l’IVS. Concernant la partie in vivo, le but de cette étude est d’obtenir la position moyenne de la cicatrice mid-septale. 
+
+L’étude a bénéficié du programme Armonica de l’IHU Liryc et du CHU de Bordeaux permettent d’obtenir des cœurs \textit{ex vivo} avec certaines pathologies. Pour ces travaux, N = 3 cœurs \textit{ex vivo} ayant été diagnostiqué avec la mutation LMNA ont été imagé par IRM à haut champ magnétique. La correspondance entre les examens cliniques et l’imagerie \textit{ex vivo} couplé à de l’histologie est disponible sur un même cœur. 
+
+\section{Matériels et Méthodes}
+
+L’ étude inclut douze cœurs humains. Huit cœurs sont issus des programme Cadence (N=8) et quatre du programme Armonica (N = 4). Parmi ces 4 cœurs trois sont des patients LMNA ayant subi une transplantation, Table \ref{tab:coeurs}. 
+
+\begin{table}[!ht]
+\large
+\begin{tabular}{cccc}
+\hline
+\textbf{Heart n°}  &  \textbf{Age [y]} & \textbf{Sex} & \textbf{dimensions [cm x cm x cm]} \\
+\hline
+\#1 &   53 &    F &   10.9 x 8.0 x 14.1 \\
+\#2  &   56 &    M &    8.6 x 9.4 x 10.7  \\
+\#3 &   82 &    F &   8.2 x 10.1 x 11.1 \\
+\#4 &   83 &    F &  10.1 x 8.1 x 11.4   \\
+\#5 & 51& F & 10.2 x 10.2 x 14.4\\ 
+\#6& 83& F & 8.4 x 7.4 x 12.1\\
+\#7 & 47& F & 8.8 x 8.3 x 10.9\\
+\#8 & 71 & F & 7.3 x 10.5 x 12.6 \\
+\#9 & 56& M & 8.8 x 11.6 x 12.1\\
+\hline
+\hline
+\#10 & 57 & F & 10.6 x 7.9 x 12.9 \\
+\#11 & 46 & M & 10.9 x 9.8 x 13.2  \\
+\#12 & 50 & F & 9.1 x 10.3 X 10.7 \\
+
+\hline
+\label{tab:coeurs}
+\end{tabular}
+\caption{Table récapitulative des caractéristiques des cœurs \textit{ex vivo}}
+\end{table}
+
+Les cœurs \textit{ex vivo} (Table \ref{tab:coeurs}) ont été fixés à partir d’une solution de formalin (10\%) et d’un agent de contraste à base de gadolinium (0.2 \%). Ils ont été canulés de manière retro-coronarienne. Enfin, les cœurs sont plongés dans la solution puis perfusés pendant 24 heures.
+\\
+Ensuite, les cœurs ont été scannés à l’IRM Bruker Biospec 9.4 T avec une antenne 7 éléments Tx/Rx de 20 cm de diamètre et des gradients de 300 mT/m.  
+\\
+Une séquence d’écho de gradient avec un angle de bascule faible (TR/TE/$\alpha$ = 30/9 ms/21 ) dites FLASH (Fast Low Angle Single sHot) a permis d’obtenir un contraste pondéré T1 et pondéré T2* avec une résolution de 150 $\mu m$ pour un temps d’acquisition total de 18h (8 moyennes). Cette image servira de repère anatomique et permettra d’évaluer la présence ou non de défaut sur l’image ou la présence d’éventuelles vaisseaux. 
+\\
+Les données de diffusion (DWI) ont été acquises à partir d’une séquence d’écho de spin (TR/TE = 500/22 ms) avec 6 directions non-colinéaire de diffusion ( b = 1000 $s/mm^2$, 1 moyenne par directions). Une image non pondérée en diffusion (b = 0 $s/mm^2$, 3 moyennes) a été acquise en plus pour un temps total d'acquisition de 24h et une résolution de 600 $\mu m$ isotrope.
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/figure-2-methode-ex-vvo-v3.png}
+  \end{center}
+  \caption{Tableau simplifié des étapes de traitements des données de diffusion permettant l’obtention de l’évolution transmural du MDI et de l’HA (métriques dérivées du DTI). Profil bleu : VG antérieur ; profil rouge : IVS basal ; Profil noir : régression non linéaire sur l’évolution transmurale pour estimer la position du changement d’orientation des cardiomyocytes dans l’IVS (avec le profil rouge)}
+  \label{fig:pipeline}
+\end{figure}
+
+A partir des données de diffusion, un tenseur a été calculé (DT) et les cartes d’ADC et de FA ainsi que les vecteurs propres $e_1$,$e_2$,$e_3$ ont été extraits du DT. A partir d’$e_1$, le MDI et HA ont été calculés (Figure \ref{fig:pipeline}).
+\\
+Pour faciliter la segmentation du VG, l’image b0 a été réalignée à l'aide d'une transformation rigide pour aligner le VG sur l'axe z. Les masques de l'épicarde et de l'endocarde de la VG ont été segmentés manuellement à l'aide de MUSICardio \cite{Merle2022}, et la carte de la profondeur du myocarde du LV a été calculée à partir des deux masques et en utilisant un opérateur laplacien pour obtenir une variation linéaire entre l’épicarde et l’endocarde \cite{Jones2000}. Le VG a été segmenté en 200 ROIs (moyenne : 2500 voxels, 540 $mm^3$) à l'aide de coordonnées cylindriques en divisant le VG en dix segments dans la direction base-apex (hauteur) et en vingt segments dans la direction radiale. Les cartes d'épaisseur de paroi et les ROIs ont été réorientés dans l'espace natif (scanner).
+\\
+Néanmoins, lorsque l’on s’intéresse à des fibres ayant une orientation quasi-orthogonale avec le plan en petit axe, il arrive fréquemment qu’un saut de 180 ° existe entre deux voxels voisins ayant une orientation similaire ($ < 2°$). Pour pallier à ce problème et donc éviter les sauts d’HA non représentatif de l’architecture du myocarde de l’IVS, proche du VD, l’angle sera déroulé, c’est-à-dire que 180° seront soustrait à tous les angles de plus de 45 °. 
+\\
+Nous avons utilisé l’indice de désordre (MDI) pour obtenir une vision locale de l’uniformité de l’orientation des cardiomyocytes dans le myocarde. Le profil transmural du MDI et d’HA a été calculé sous MATLAB avec le volume de profondeur du myocarde en moyennant (et calculant la déviation standard) chaque métrique entre deux valeurs de profondeur. 
+\\
+La position de la discontinuité a été évalué à l’aide d’une régression non linéaire sur les profils transmuraux. Le profil MDI peut être approximé par la combinaison un polynôme d’ordre 1 et une gaussienne. Pour l’HA, une première régression avec un polynôme d’ordre 1 a été faite puis une seconde régression avec un fit tangent hyperbolique. La position de la discontinuité sur la régression non linéaire HA a été trouvée en calculant le minimum de la dérivée et celle du MDI trouvée en calculant le minimum local de la régression.
+\\
+Pour évaluer l’impact de la réorientation du tenseur sur le MDI, l’IVS de cœur \# 1 a été réorienté avec la méthode du log-euclidien avec une transformation rigide (ANTs), et ensuite le MDI est calculé. Dans un second temps, le MDI est calculé à partir du tenseur dans l’espace grand-axe puis le MDI est réorienté.
+\\
+Pour imager la fibrose et valider la position de la fibrose avec la discontinuité, une séquence permettant de calculer le ratio de transfert de magnétisation (FLASH : TR/TE/$\alpha$ = 2000/9/90°) avec et sans module de transfert d’aimantation \cite{Haliot2021} a été faite sur le cœur \# 11 ( cœur LMNA) pour imager la fibrose dans l’IVS. 
+
+\section{Résultats}
+\subsection{Impact de la taille de la ROI sur l'HA}
+
+La Figure \ref{fig:taille_HA} montre le profil transmural (endocarde – epicarde) HA dans le VG sur un cœur humain(\# 1, panneau de gauche). La valeur moyenne du profil (ligne bleu) varie entre 50° et -50°. La déviation standard est en moyenne plus importante à l’endocarde (+24°,+ 100 \%) et à l’épicarde ( + 13°, +50\%) qu’au centre du profil (24°).  La régression linéaire (pondérée avec l’inverse de la déviation standard) appliquée sur le profil s’ajuste correctement avec le profil (RMSE = 32). La régression non linéaire (aussi pondérée avec la déviation standard) tangente hyperbolique correspond plus au profil observé (RMSE = 13). L’épicarde et l’endocarde sont des zones hétérogènes (gras épicardique, muscles papillaires, potentielle bulle d’air / formol pendant l’acquisition), les 10\% premiers points et les 2\% derniers points du profil ne sont pas utilisés pour le calcul des régressions.
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/effet_taille_roi_HA.png}
+  \end{center}
+  \caption{Variation HA dans le VG du cœur \# 1. Gauche : profil HA du VG (bleu) avec régression linéaire (noirs) ou non linéaire à partir d’une tangente hyperbolique (tanh, rouge). Droite :  Evolution du profil HA dans une ROI basale de l’IVS. Haut – gauche : large et profonde ROI ; Bas – droite : étroite et mid-septal ROI. Cercle noir : point d’inflexion, cercle rouge pas de point d’inflexion}
+  \label{fig:taille_HA}
+\end{figure}
+Le panneau de droite de la Figure \ref{fig:taille_HA} illustre l’influence de la taille du ROI dans la région basale de l’IVS sur le profil transmural. La ROI A correspond à la plus grande ROI et I à la plus petite. Le passage du ROI à l’autre se fait en supprimant (dans le sens diminution [par exemple A vers B]) 1/5 de la ROI de chaque côté de la ROI. I est donc quinze fois plus petite qu’A. Un point d’inflexion dans le profil transmural est visible en I (cercle noir) alors qu’il ne l’a plus en A (cercle rouge).  Ce point inflexion traduit une variation abrupte de la linéarité du profil HA et donc un changement localisé et abrupte d’orientation des cardiomyocytes dans l’IVS. Le changement de taille entre A-B-C montre l’importance d’avoir une ROI recentrée sur l’IVS permettant de réduire la déviation standard du profil et de mieux définir le point d’inflexion. Pour la suite de l’étude, les ROIS auront une taille supérieur à I (+10\%) pour augmenter le nombre de points dans le calcul du profil. 
+
+\subsection{Impact de la réorientation du DT sur le MDI}
+
+Par définition, le MDI est une métrique invariante à l’orientation de l’échantillon dans le référenciel de l’image. A contrario, le HA dépendra de la définition du grand axe du cœur.  La Figure \ref{fig:reo_MDI} montre l’impact de l’orientation d’un même échantillon sur la valeur du MDI et indique de légères différences.  Le MDI a été premièrement calculé dans l’espace LA puis réorienté (deuxième ligne) pour différents angles allant de 0 à 90°. Dans un second temps, le tenseur a été réorienté avec ces mêmes angles puis le MDI a été calculé (troisième ligne).  Une différence notable ($>25 \%$)  existe entre les deux méthodes de calcul ( quatrième ligne) quel que soit l’angle utilisé pour la rotation (transformation rigide). Le profil transmural (cinquième ligne) a été calculé avec une ROI à la base de l’IVS et de la carte de profondeur du myocarde. Une gaussienne symbolisant une baisse locale du MDI est visible sur tous les profils mais l’amplitude varie en fonction de l’angle. Sa position quant à elle, reste constante à 70 \% de l’épaisseur du myocarde, quelle que soit la rotation effectuée. 
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/effet_rotation_IVS_MDI_avec_diff_et_profil.png}
+  \end{center}
+  \caption{Effet d’une transformation rigide sur la valeur et la position du MDI. Première ligne : $e_{1,DTI}$ dans l’IVS extrait du tenseur réorienté. Deuxième ligne : MDI calculé après réorientation du tenseur. Troisième ligne : MDI calculé sans réorientation (angle = 0°), puis réorienté à l’aide d’une transformation rigide. Quatrième ligne : différence absolue entre les deux MDI (deuxième et troisième ligne). Cinquième ligne : profil transmural à la base de l’IVS du MDI calculé après réorientation du tenseur (Deuxième ligne)}
+  \label{fig:reo_MDI}
+\end{figure}
+
+La baisse locale est présente sur ce cœur (\# 1) de la base à l’apex pour chaque tenseur réorienté, mais elle reste moins prononcée sur le tenseur en LA. La différence entre les deux MDI montre qu’il existe un changement de valeur de MDI de manière localisé (la différence entre les deux méthodes de calculs du MDI n'est supérieur à 0 qu'au niveau de la discontinuité, tait blanc sur la quatrième ligne), la réorientation n’a donc pas d’impact dans les zones ou le MDI est égale à 1, c’est-à-dire les zones ou les myofibres ont toutes la même orientation. 
+\\
+Comme la position de la gaussienne du MDI est invariante selon l’orientation du tenseur, pour la suite de l’étude, les métriques HA et MDI seront calculés dans leurs propres espaces natifs (espace du scanner).
+\clearpage
+\subsection{Étude \textit{ex vivo} sur l’existence et la position d’un changement d’orientation abrupte des cardiomyocytes dans l’IVS chez l’homme}
+
+Un exemple de profil et variation transmural dans la paroi libre et dans l’IVS est donné Figure \ref{fig:heathly_vs_LMNA}, avec un cœur « contrôle » et un cœur LMNA. Dans la paroi libre du VG, dans les deux cas, l’orientation sut la règle de l’Helix Angle avec un variation qui semble linéaire entre l’endocarde et l’épicarde. Toujours, dans la paroi libre, le MDI ne révèle aucun changement abrupt d’orientation (MDI proche de 1, couleur jaune clair - blanc). 
+Dans l’IVS, dans les deux cas deux populations d’orientations de fibres existent : fibres circonférentielles (couleur verte) côté VG et fibres longitudinales (couleur bleu) côté VD. Le changement abrupt entre ces deux orientations est matérialisé par un changement abrupt de la variation linéaire de HA, il se traduit aussi par une chute du MDI symbolisant une anisotropie locale de l’orientation des myocytes.
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/health_vs_LMNA.png}
+  \end{center}
+  \caption{Visualisation de $e_{1,DTI}$, du MDI et de l’HA dans la paroi libre (ROI bleu) et dans l'IVS (ROI rouge) dans un cœur de contrôle \textit{ex vivo} (\# 1) d'un donneur (panneau supérieur) et dans un échantillon de cœur (\# 11) d'un patient LMNA (panneau inférieur). Les images anatomiques en vue SA (I et II) sont représentées avec une ROI dans chaque région vue de l'épicarde à l'endocarde Le code couleur $e_{1,DTI}$ correspond à la direction dans le repère anatomique : vert, antérieur-postérieur ; bleu, inférieur-supérieur ; et rouge, gauche-droite. Les profils transmuraux de l'endocarde à l'épicarde sont tracés pour HA et MDI dans la paroi libre du ventricule gauche et l'IVS}
+  \label{fig:heathly_vs_LMNA}
+\end{figure}
+
+La discontinuité a été trouvé sur tous les échantillons (12/12, 100\%), avec la régression MDI et la régression HA. En moyenne, elle est située à 0.76$ \pm$ 0.078 (MDI) ou à 0.75 $\pm$ 0.085 (HA) de profondeur par rapport à la cavité du VG. La chute de MDI est visible entre les deux points d’insertion sur N=9 (75 \%), côté antérieur sur N=1 (8\%) et côté postérieur N = 2 (17 \%). Elle est aussi visible de la base à l’apex sur N =2 (17 \%), de la base à la moitié de l’IVS sur N = 5 (42 \%), de la base au 2/3 de l’IVS (N = 2, 17\%), qu’au niveau basale sur N=1 (8 \%) et de la base à la SMT sur N=1 (8 \%).
+\\
+Sur la paroi libre du VG, la régression tangente hyperbolique est comparée avec une régression linéaire. Le RMSE avec la tangente hyperbolique est de 4.12 $\pm$ 2.73 contre 5.22 $\pm$ 3.43 avec la fonction linéaire. 
+\clearpage
+
+La présence de fibrose a été validé par histologie avec deux colorations (Sirius rouge et trichrome de Masson, seulement le rouge sirius sera présenté dans ce paragraphe). Une ligne de fibrose reliant les points d’insertions antérieurs et postérieurs est visible sur la Figure \ref{fig:multimodale_LMNA}.A . Des vaisseaux sont visibles en histologie et en IRM (flèches vertes) entrainant une chute de FA (Figure \ref{fig:multimodale_LMNA}.C). Par contre, sur le zoom de la SMT (Figure \ref{fig:multimodale_LMNA}– carrés), une zone fribrotique en forme de triangle est visible. Cette fibrose entraine aussi une chute de FA (Figure \ref{fig:multimodale_LMNA}.C), une augmentation du coefficient apparent de diffusion (Figure \ref{fig:multimodale_LMNA}.D) et une augmentation du ratio de transfert de magnétisation (Figure \ref{fig:multimodale_LMNA}.G). De plus, une baisse du MDI est visible (Figure \ref{fig:multimodale_LMNA}.F) liée à la double populations d’orientions des cardiomyocytes (Figure \ref{fig:multimodale_LMNA}.E). La zone fibrotique triangulaire n’a aucune influence sur le MDI dans la SMT (aucune chute de MDI dans la SMT). Les flèches bleues pointent vers une zone de signal homogène en écho de gradient (Figure \ref{fig:multimodale_LMNA}.B) avec une chute de MDI (Figure \ref{fig:multimodale_LMNA}.F).
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/figures_MT_FA_IVS.png}
+  \end{center}
+  \caption{Vue en petit axe de l’IVS à l’aide de différentes techniques d’imagerie \textit{ex vivo} d’un cœur LMNA. A : Coupe d’histologie avec coloration Sirius rouge (collagène (MEC / fibroses) : bleu – violet, myocytes = orange – beige). B : écho de gradient. C-F : Métriques dérivées du DTI (C : FA, D : ADC, E : vecteur propre 1, F = MDI). G : Ratio de transfert de magnétisation. Flèches vertes : vaisseaux sanguins dans la SMT. Flèches bleues : myocarde homogène. Carrés gris (Histologie) et oranges (IRM) : zoom sur une zone de fibrose en forme de triangle. N.B. Les images IRM ne sont pas parfaitement recalées sur l’histologie car les images de diffusion n’ont pas été réorienté pour éviter tout problème d’interpolation.}
+  \label{fig:multimodale_LMNA}
+\end{figure}
+
+\clearpage
+\section{Discussions}
+
+Cette étude comporte une partie clinique / \textit{in vivo} et une partie pré-clinique visant à corréler des phénotypes cliniques avec une description précise du myocarde.
+
+\begin{figure}[!ht]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{Chapitre3/figures_coeur_11_cmr_exvivo.png}
+  \end{center}
+  \caption{Compararaison de la position de la fibrose visible en LGE et de la position de la discontinuité caclculée à partir du MDI sur un coeur LMNA. Carrés bleus : zoom sur la position de la fibrose/discontinuité et la SMT}
+  \label{fig:CMR_LMNA}
+\end{figure}
+La comparaison entre les examens cliniques et l’analyse \textit{ex vivo} sur un même cœur (N=3 dans cette étude) est effectué dans l’article ci-joint (un exemple sur le coeur \# 11 est visible Figure \ref{fig:CMR_LMNA}). Les recherches \textit{ex vivo} (histologie et IRM à haute résolution) sur cœurs LMNA permettent de confirmer le lien entre position de la fibrose dans le myocarde et architecture complexe du myocarde \cite{Chatzifrangkeskou2023}. 
+\\
+La fibrose est diffuse dans tout l’IVS mais de la fibrose \textit{patchy} est visible à l’interface entre les deux populations d’orientation de myofibre (Figure\ref{fig:multimodale_LMNA}). Les résultats appuient nos hypothèses (l'architecture laminaire du myocarde et  les forces de cisaillement influent sur la position de la fibrose) : nous observons une complexité architecturale plus prononcé dans l’IVS au niveau basal que dans le VG. Ce résultat est présent sur cœur dit contrôle et cœur LMNA. Nous supposons que le stress mécanique local appliqué dans l’IVS lors du fonctionnement normal du cœur s’exprimerait différemment en présence ou non LMNA.  Nous pensons que la faiblesse structurale des cardiomyocytes (dû à la mutation LMNA) serait plus susceptible de s’exprimer dans la zone de changement d’orientation (en raison de contrainte mécanique plus hétérogène) que dans d’autre lieu de la paroi de l’IVS. Ce scénario permettrait d’expliquer plus finement l’apparition de la cicatrice mid-septale avec sa forme et position caractéristique sur cette population de patient. 
+\\
+Par ailleurs, des études sur des sportifs de haut niveau \cite{Szabo2022} ont montré que du rehaussement tardif mid-septal était aussi présent dans cette population, le stress mécanique intense pourrait être à l’origine de cette cicatrice. Néanmoins, ces hypothèses sont renforcées par notre étude mais ne font pas lieu de démonstration. Des simulations mécaniques couplées à des simulations électrophysiologiques et surtout une étude préclinique sur le gros animal avec un modèle LMNA serait nécessaire pour confirmer cette l’hypothèse. 
+\\
+D’un point de vue méthodologique, cette étude montre les limites de métriques comme l’HA et le MDI. L’HA permet de décrire le VG mais utiliser cette métrique pour une autre zone du cœur n’est plus aussi qualitatif. Le MDI est plus prometteur car il permet d’obtenir la position du désordre myocardique indépendant de l’orientation de l’échantillon mais la valeur du MDI va quand-à-elle varier (Figure \ref{fig:heathly_vs_LMNA}).
+\\ 
+Pour terminer, il ne faut jamais oublier qu’un tenseur de diffusion est la représentation mathématique d’une somme de cardiomyocytes, de matrice extra-cellulaire, de fibres de Purkinje et de vaisseaux sanguins/capillaires. Dans le myocarde sain de la paroi libre du VG, un tenseur est une assez bonne description de cette somme mais dans un voxel avec de la fibrose et moins de cardiomyocytes, la FA du tenseur va baisser car le tissu est plus hétérogène (Figure \ref{fig:multimodale_LMNA}). Une baisse de FA indique que les valeurs propres du tenseur tendent à être égaux entre eux, et donc il est plus difficile d’interpréter les métriques dérivées de $e_1$ ($\lambda_1\gg\lambda_2\ \approx\lambda_3$ n'est plus vraie donc le tenseur va être une boule et moins une ellipsoide). Typiquement, une chute de MDI avec des voxels ayant des $e_1$ différents dû à l’organisation des myocytes peut être identique à une chute de MDI avec des voxels ayant des $e_1$ mal estimés à cause d’une trop grande hétérogénéité du tissu. C’est un véritable problème lié au volume partiel présent dans un voxel, il n’est donc malheureusement pas possible d’utiliser le MDI comme d’un marqueur clinique de la fibrose, tout comme la FA. Des études récentes in vivo (épaisseur de coupe de 5/8 mm) utilise la FA comme marqueur clinique mais sur de larges cicatrices et elle est utilisée en complément d’autres métriques de diffusion (Coefficient apparent de diffusion [ADC,MD], angle dérivé du deuxième vecteur propres [E2A]).\cite{Das2023}
+
+Pour éviter ce problème (MDI non représentatif d'une discountinuité architecturale des myofibres à cause d'une mauvaise estimation d'un tenseur et la présence de MEC dans l'IVS pour les coeurs LMNA), nous avons fait le choix de comparer des cœurs sans fibrose dans l’IVS (N=9) avec les cœurs LMNA (N=3). Cela permet d’affirmer qu’une chute de MDI est présente chez l’homme quelques soit ses antécédents cardiaques. 
+
+\section{Travaux effectués}
+
+Ces travaux ont fait l’objet d’un abstract à FIMH (\textit{Functionnal Imaging and Modelisation of the Heart}) 2023 à Lyon puis d’une publication en cours de rédaction et est retranscrite par la suite.
+
+Ma contribution est centrée sur l’étude \textit{ex vivo}, c’est pourquoi j’ai accentué ce chapitre sur cette partie de l’étude. Une première version de l’étude \textit{in vivo}a été effectuée par J. Magat et V. Ozenne puis une deuxième grâce au concours de Hubert Cochet et Soumaya Sridi du CHU de Bordeaux. 
+ 
+
+
